@@ -1,0 +1,12 @@
+# Ignore environment variables file
+.env
+
+# Node modules
+node_modules/
+
+# Config
+config.json
+
+# Logs
+logs
+*.log
