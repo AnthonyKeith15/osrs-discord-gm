@@ -1,12 +1,10 @@
 const fs = require('node:fs');
 const path = require('node:path');
-const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
+const { Client, Collection, GatewayIntentBits } = require('discord.js');
 require('dotenv').config(); // Load environment variables
 
 // Access the token from process.env
 const token = process.env.DISCORD_TOKEN;
-
-
 
 // Create a new client instance
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
@@ -43,6 +41,34 @@ for (const file of eventFiles) {
 		client.on(event.name, (...args) => event.execute(...args));
 	}
 }
+
+client.on('interactionCreate', async interaction => {
+    if (!interaction.isCommand()) return;
+
+    const command = client.commands.get(interaction.commandName);
+
+    if (command) {
+        try {
+            // Execute the command
+            await command.execute(interaction);
+        } catch (error) {
+            // Log other errors
+            if (error.code !== 10062) {
+                console.error(`Error executing command: ${error}`);
+            }
+        }
+    }
+});
+
+
+// Global error handlers
+process.on('unhandledRejection', error => {
+    console.error('Unhandled promise rejection:', error);
+});
+
+process.on('uncaughtException', error => {
+    console.error('Uncaught exception:', error);
+});
 
 // Log in to Discord with your client's token
 client.login(token);
