@@ -1,1 +1,54 @@
-{}
+{
+  "TeamAlpha": {
+    "position": 1,
+    "members": [
+      {
+        "discordID": "123456789012345678",
+        "discordName": "User1",
+        "verificationLinks": {}
+      },
+      {
+        "discordID": "876543210987654321",
+        "discordName": "User2",
+        "verificationLinks": {}
+      }
+    ]
+  },
+  "TeamBravo": {
+    "position": 8,
+    "members": [
+      {
+        "discordID": "112233445566778899",
+        "discordName": "User3",
+        "verificationLinks": {}
+      },
+      {
+        "discordID": "998877665544332211",
+        "discordName": "User4",
+        "verificationLinks": {}
+      }
+    ]
+  },
+  "TeamCharlie": {
+    "position": 7,
+    "members": []
+  },
+  "TeamDelta": {
+    "position": 34,
+    "members": []
+  },
+  "chromee": {
+    "position": 8,
+    "members": []
+  },
+  "chrom333": {
+    "position": 8,
+    "members": [
+      {
+        "discordID": "196901285071552513",
+        "discordName": "vngchrome",
+        "verificationLinks": {}
+      }
+    ]
+  }
+}
