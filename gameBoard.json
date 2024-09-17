@@ -42,7 +42,7 @@
           },
           {
             "position": 10,
-            "description": "Go back 1 space",
+            "description": "You forgot MFA, head back 1 space",
             "action": {
               "type": "move",
               "spaces": -1
@@ -62,7 +62,7 @@
           },
           {
             "position": 14,
-            "description": "Roll again",
+            "description": "Guthix Blesses You, roll again",
             "action": {
               "type": "rollAgain"
             }
@@ -137,7 +137,7 @@
           },
           {
             "position": 32,
-            "description": "Go back 3 tiles",
+            "description": "Abyssal Demons teleport you back 3 spaces",
             "action": {
               "type": "move",
               "spaces": -3
@@ -161,7 +161,7 @@
           },
           {
             "position": 37,
-            "description": "Go back 1 space",
+            "description": "What if this one is a T-Bow? Go back 1 space",
             "action": {
               "type": "move",
               "spaces": -1
@@ -189,7 +189,7 @@
           },
           {
             "position": 43,
-            "description": "Go forward 2 spaces",
+            "description": "*Halo 3 Announcer* Slayer! Go forward 2 spaces",
             "action": {
               "type": "move",
               "spaces": 2
@@ -257,7 +257,7 @@
           },
           {
             "position": 59,
-            "description": "Roll again",
+            "description": "Getting pretty close to the end, roll again",
             "action": {
               "type": "rollAgain"
             }
