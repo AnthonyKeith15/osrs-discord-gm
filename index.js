@@ -43,6 +43,21 @@ for (const file of eventFiles) {
 	}
 }
 
+// Function to log interaction details to logs.txt
+function logInteraction(interaction, result) {
+	const logsFilePath = path.join(__dirname, 'logs.txt');
+	const timestamp = new Date().toISOString();
+	const logMessage = `[${timestamp}] User: ${interaction.user.tag} (ID: ${interaction.user.id}) | Command: ${interaction.commandName} | Result: ${result}\n`;
+
+	fs.appendFile(logsFilePath, logMessage, (err) => {
+		if (err) {
+			console.error('Error writing to logs.txt:', err);
+		} else {
+			console.log('Interaction logged to logs.txt');
+		}
+	});
+}
+
 client.on('interactionCreate', async interaction => {
 	if (!interaction.isCommand()) return;
 
@@ -63,7 +78,9 @@ client.on('interactionCreate', async interaction => {
 
 		if (now < expirationTime) {
 			const expiredTimestamp = Math.round(expirationTime / 1_000);
-			return interaction.reply({ content: `Please wait, you are on a cooldown for \`${command.data.name}\`. You can use it again <t:${expiredTimestamp}:R>.`, ephemeral: true });
+			const cooldownMessage = `Please wait, you are on a cooldown for \`${command.data.name}\`. You can use it again <t:${expiredTimestamp}:R>.`;
+			logInteraction(interaction, `Cooldown: ${cooldownMessage}`);
+			return interaction.reply({ content: cooldownMessage, ephemeral: true });
 		}
 	}
 
@@ -73,6 +90,7 @@ client.on('interactionCreate', async interaction => {
 	if (command) {
 		try {
 			await command.execute(interaction);
+			logInteraction(interaction, 'Success');
 		} catch (error) {
 			if (error.code !== 10062) {
 				console.error(`Error executing command: ${error}`);

@@ -10,8 +10,9 @@ module.exports = {
     async execute(interaction) {
         console.log('Executing leaveTeam command');
 
-        // Define the path to the teams.json file
+        // Define the paths to the teams.json and logs.txt files
         const teamsFilePath = path.join(__dirname, '../../teams.json');
+        const logsFilePath = path.join(__dirname, '../../logs.txt');
 
         try {
             // Defer the reply to give us time to process the command
@@ -45,6 +46,13 @@ module.exports = {
             // Save the updated teams data back to the JSON file
             await fs.writeFile(teamsFilePath, JSON.stringify(teamsData, null, 2));
             console.log('Successfully updated teams.json');
+
+            // Log the leave team action to logs.txt
+            const timestamp = new Date().toISOString();
+            const logMessage = `[${timestamp}] User: ${interaction.user.tag} (ID: ${interaction.user.id}) | Command: leaveteam | Left team: ${userTeamName}\n`;
+            await fs.appendFile(logsFilePath, logMessage);
+            console.log('Leave team action logged to logs.txt');
+
             await interaction.editReply({ content: `You have successfully left the team **${userTeamName}**.` });
 
         } catch (error) {

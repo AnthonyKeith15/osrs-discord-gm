@@ -15,8 +15,9 @@ module.exports = {
     async execute(interaction) {
         console.log('Executing submitVerification command');
 
-        // Define the path to the teams.json file
+        // Define the paths to the teams.json and logs.txt files
         const teamsFilePath = path.join(__dirname, '../../teams.json');
+        const logsFilePath = path.join(__dirname, '../../logs.txt');
 
         try {
             // Defer the reply to give us time to process the command
@@ -25,10 +26,13 @@ module.exports = {
 
             console.log('Attempting to read teams.json file...');
 
-            // Read and parse teams.json
+            // Read and parse teams.json before making changes
             const data = await fs.readFile(teamsFilePath, 'utf-8');
             console.log('Successfully read teams.json');
             const teamsData = JSON.parse(data);
+
+            // Deep copy of teamsData for change comparison
+            const originalData = JSON.parse(JSON.stringify(teamsData));
 
             // Find the user's team and their current position
             let userTeam = null;
@@ -62,6 +66,20 @@ module.exports = {
             // Save the updated teams data back to the JSON file
             await fs.writeFile(teamsFilePath, JSON.stringify(teamsData, null, 2));
             console.log('Successfully updated teams.json with verification link');
+
+            // Log the changes to logs.txt
+            const changes = {
+                verificationSubmitted: {
+                    team: userTeam,
+                    member: interaction.user.username,
+                    position: currentPosition,
+                    imageUrl: image.url
+                }
+            };
+            const timestamp = new Date().toISOString();
+            const logMessage = `[${timestamp}] User: ${interaction.user.tag} (ID: ${interaction.user.id}) | Command: submitverification | Changes: ${JSON.stringify(changes)}\n`;
+            await fs.appendFile(logsFilePath, logMessage);
+            console.log('Changes logged to logs.txt');
 
             await interaction.editReply({ content: `Verification submitted for position ${currentPosition}.` });
 

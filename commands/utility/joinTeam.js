@@ -10,8 +10,9 @@ module.exports = {
     async execute(interaction) {
         console.log('Executing joinTeam command');
 
-        // Define the path to the teams.json file
+        // Define the path to the teams.json and logs.txt files
         const teamsFilePath = path.join(__dirname, '../../teams.json');
+        const logsFilePath = path.join(__dirname, '../../logs.txt');
 
         // Defer the reply to give us time to process the command
         await interaction.deferReply({ ephemeral: true });
@@ -20,23 +21,13 @@ module.exports = {
         try {
             console.log('Attempting to read teams.json file...');
 
-            // Attempt to read teams.json and parse it
-            let teamsData;
-            try {
-                const data = await fs.readFile(teamsFilePath, 'utf-8');
-                console.log('Successfully read teams.json');
-                teamsData = JSON.parse(data);
-            } catch (readError) {
-                console.error('Error reading teams.json:', readError);
-                await interaction.editReply({ content: 'Error reading team data. Please try again later.' });
-                return;
-            }
+            // Read and parse teams.json before making changes
+            let teamsData = JSON.parse(await fs.readFile(teamsFilePath, 'utf-8'));
+            const originalData = JSON.parse(JSON.stringify(teamsData)); // Deep copy for comparison
 
             // Check if the user is already in a team
-            let isInTeam = false;
             for (const [teamName, teamInfo] of Object.entries(teamsData)) {
                 if (teamInfo.members.some(member => member.discordID === interaction.user.id)) {
-                    isInTeam = true;
                     await interaction.editReply({ content: `You are already a member of the team **${teamName}**.` });
                     return;
                 }
@@ -52,7 +43,6 @@ module.exports = {
 
             // Check if there are any teams available
             if (teamOptions.length === 0) {
-                console.log('No teams available to join');
                 await interaction.editReply({ content: 'No teams available to join.' });
                 return;
             }
@@ -92,6 +82,20 @@ module.exports = {
                 try {
                     await fs.writeFile(teamsFilePath, JSON.stringify(teamsData, null, 2));
                     console.log('Successfully wrote to teams.json');
+
+                    // Log the changes to logs.txt
+                    const changes = {
+                        teamJoined: selectedTeam,
+                        newMember: {
+                            discordID: interaction.user.id,
+                            discordName: interaction.user.username
+                        }
+                    };
+                    const timestamp = new Date().toISOString();
+                    const logMessage = `[${timestamp}] User: ${interaction.user.tag} (ID: ${interaction.user.id}) | Command: jointeam | Changes: ${JSON.stringify(changes)}\n`;
+                    await fs.appendFile(logsFilePath, logMessage);
+                    console.log('Changes logged to logs.txt');
+
                     await i.update({ content: `You have joined **${selectedTeam}**!`, components: [], ephemeral: true });
                 } catch (writeError) {
                     console.error('Error writing to teams.json:', writeError);
@@ -101,7 +105,6 @@ module.exports = {
 
             collector.on('end', async (collected, reason) => {
                 if (reason === 'time' && collected.size === 0) {
-                    console.log('Team selection menu expired without a selection');
                     try {
                         await interaction.editReply({ content: 'No team selected.', components: [] });
                     } catch (error) {
