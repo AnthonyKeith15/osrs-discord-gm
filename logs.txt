@@ -56,3 +56,49 @@
 [2024-09-17T21:49:48.513Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 29, Rolled: 3, Landed on: 32, Space Description: Abyssal Demons teleport you back 3 spaces, Additional Move: -3, Final Position: 29, Final Space Description: 1 Whip drop per team
 [2024-09-17T21:49:53.670Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 29, Rolled: 3, Landed on: 32, Space Description: Abyssal Demons teleport you back 3 spaces, Additional Move: -3, Final Position: 29, Final Space Description: 1 Whip drop per team
 [2024-09-17T21:49:53.838Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Result: Success
+[2024-09-20T23:03:11.633Z] User: lazyjesus (ID: 756701883749498981) | Command: jointeam | Result: Success
+[2024-09-20T23:03:15.555Z] User: lazyjesus (ID: 756701883749498981) | Command: jointeam | Changes: {"teamJoined":"TeamAlpha","newMember":{"discordID":"756701883749498981","discordName":"lazyjesus"}}
+[2024-09-21T16:11:41.707Z] User: vngchrome (ID: 196901285071552513) | Executed command `scoreboard`
+[2024-09-21T16:11:57.164Z] User: vngchrome (ID: 196901285071552513) | Executed command `moveteam`
+[2024-09-21T16:12:10.973Z] User: vngchrome (ID: 196901285071552513) | Executed command `scoreboard`
+[2024-09-21T16:12:33.412Z] User: vngchrome (ID: 196901285071552513) | Command: submitverification | Changes: {"verificationSubmitted":{"team":{"position":34,"members":[{"discordID":"196901285071552513","discordName":"vngchrome","verificationLinks":{"1":{"preVerificationLink":"https://cdn.discordapp.com/ephemeral-attachments/1285696322900463699/1285702095764455425/Screenshot_2024-09-07_170020.png","postVerificationLink":"https://cdn.discordapp.com/ephemeral-attachments/1285696322900463699/1285702095764455425/Screenshot_2024-09-07_180020.png","isVerified":true},"4":{"preVerificationLink":"https://cdn.discordapp.com/ephemeral-attachments/1285696322900463699/1285703835234471966/Screenshot_2024-07-28_093049.png","postVerificationLink":"https://cdn.discordapp.com/ephemeral-attachments/1285696322900463699/1285703835234471966/Screenshot_2024-07-28_100049.png","isVerified":false},"34":"https://cdn.discordapp.com/ephemeral-attachments/1285696322900463699/1287084056672206899/Screenshot_2024-07-28_093058.png?ex=66f041ef&is=66eef06f&hm=602c480d3ed4039b1541405ef1dd99967ab429d8671ac4f45d13bd6b6ce63c07&"}}]},"member":"vngchrome","position":"34","imageUrl":"https://cdn.discordapp.com/ephemeral-attachments/1285696322900463699/1287084056672206899/Screenshot_2024-07-28_093058.png?ex=66f041ef&is=66eef06f&hm=602c480d3ed4039b1541405ef1dd99967ab429d8671ac4f45d13bd6b6ce63c07&"}}
+[2024-09-21T16:12:33.758Z] User: vngchrome (ID: 196901285071552513) | Executed command `submitverification`
+[2024-09-21T16:21:08.701Z] User: vngchrome (ID: 196901285071552513) | Executed command `moveteam`
+[2024-09-21T16:21:26.333Z] User: vngchrome (ID: 196901285071552513) | Executed command `scoreboard`
+[2024-09-21T16:21:37.878Z] User: vngchrome (ID: 196901285071552513) | Executed command `moveteam`
+[2024-09-21T16:24:34.320Z] User: vngchrome (ID: 196901285071552513) | Executed command `starttile`
+[2024-09-21T16:24:54.317Z] User: vngchrome (ID: 196901285071552513) | Executed command `starttile`
+[2024-09-21T16:25:10.422Z] User: vngchrome (ID: 196901285071552513) | Executed command `endtile`
+[2024-09-21T16:25:23.156Z] User: vngchrome (ID: 196901285071552513) | Executed command `moveteam`
+[2024-09-21T16:25:40.411Z] User: vngchrome (ID: 196901285071552513) | Executed command `starttile`
+[2024-09-21T16:29:05.215Z] User: vngchrome (ID: 196901285071552513) | Executed command `starttile`
+[2024-09-21T16:29:13.385Z] User: vngchrome (ID: 196901285071552513) | Executed command `scoreboard`
+[2024-09-21T16:31:30.426Z] User: vngchrome (ID: 196901285071552513) | Executed command `starttile`
+[2024-09-21T16:34:09.114Z] Team: blue | Tile: 11 | Description: 1 Zulrah unique per team | Verification: per_team
+[2024-09-21T16:34:09.279Z] User: vngchrome (ID: 196901285071552513) | Executed command `starttile`
+[2024-09-21T16:34:34.595Z] User: vngchrome (ID: 196901285071552513) | Executed command `endtile`
+[2024-09-21T16:37:14.012Z] Team: blue | Tile: 11 | Description: 1 Zulrah unique per team | Verification: per_team
+[2024-09-21T16:37:14.191Z] User: vngchrome (ID: 196901285071552513) | Executed command `starttile`
+[2024-09-21T16:37:25.578Z] User: vngchrome (ID: 196901285071552513) | Executed command `endtile`
+[2024-09-21T16:42:05.931Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 11, Rolled: 3, Landed on: 14, Space Description: Guthix Blesses You, roll again, Additional Move: 0, Final Position: 14, Final Space Description: Guthix Blesses You, roll again
+[2024-09-21T16:42:06.050Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-09-21T16:42:10.353Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 14, Rolled: 2, Landed on: 16, Space Description: 1 Tombs of Amascut purple per team, Additional Move: 0, Final Position: 16, Final Space Description: 1 Tombs of Amascut purple per team
+[2024-09-21T16:42:10.499Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-09-21T16:42:19.869Z] Team: blue | Tile: 16 | Description: 1 Tombs of Amascut purple per team | Verification: per_team
+[2024-09-21T16:42:20.020Z] User: vngchrome (ID: 196901285071552513) | Executed command `starttile`
+[2024-09-21T16:42:43.616Z] User: vngchrome (ID: 196901285071552513) | Executed command `endtile`
+[2024-09-21T16:43:02.387Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 16, Rolled: 1, Landed on: 17, Space Description: 1 Kalphite Queen head per team, Additional Move: 0, Final Position: 17, Final Space Description: 1 Kalphite Queen head per team
+[2024-09-21T16:43:02.558Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-09-21T16:43:05.636Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 17, Rolled: 5, Landed on: 22, Space Description: 5 Obor kill count per member, Additional Move: 0, Final Position: 22, Final Space Description: 5 Obor kill count per member
+[2024-09-21T16:43:05.775Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-09-21T16:43:13.377Z] User: vngchrome (ID: 196901285071552513) | Executed command `starttile`
+[2024-09-21T16:43:27.088Z] Team: blue | Tile: 22 | Description: 5 Obor kill count per member | Verification: per_member
+[2024-09-21T16:43:27.237Z] User: vngchrome (ID: 196901285071552513) | Executed command `starttile`
+[2024-09-21T16:44:36.672Z] Team: blue | Tile: 22 | Description: 5 Obor kill count per member | Verification: per_member
+[2024-09-21T16:44:36.785Z] User: vngchrome (ID: 196901285071552513) | Executed command `starttile`
+[2024-09-21T16:45:18.017Z] Team: blue | Tile: 22 | Description: 5 Obor kill count per member | Verification: per_member
+[2024-09-21T16:45:18.135Z] User: vngchrome (ID: 196901285071552513) | Executed command `starttile`
+[2024-09-21T16:45:42.190Z] User: vngchrome (ID: 196901285071552513) | Executed command `moveteam`
+[2024-09-21T16:46:07.463Z] Team: blue | Tile: 4 | Description: 10 Corrupted Gauntlet completions as a team | Verification: per_team
+[2024-09-21T16:46:07.607Z] User: vngchrome (ID: 196901285071552513) | Executed command `starttile`
+[2024-09-21T16:46:22.622Z] User: vngchrome (ID: 196901285071552513) | Executed command `endtile`

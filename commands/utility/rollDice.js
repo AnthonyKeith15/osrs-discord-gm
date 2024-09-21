@@ -50,7 +50,7 @@ module.exports = {
             const startingPosition = userTeam.position;
 
             // Roll a d6
-            const roll = 3 //Math.floor(Math.random() * 6) + 1;
+            const roll = Math.floor(Math.random() * 6) + 1;
             console.log(`Rolled a d6: ${roll}`);
 
             // Calculate the new position

@@ -1,281 +1,448 @@
 {
-    "game": {
-      "name": "OSRS Themed Board Game",
-      "board": {
-        "size": 62,
-        "spaces": [
-          {
-            "position": 1,
-            "description": "1 Barrows unique per member"
-          },
-          {
-            "position": 2,
-            "description": "25 Vetion kills per member"
-          },
-          {
-            "position": 3,
-            "description": "75 rewards at Tempoross per member"
-          },
-          {
-            "position": 4,
-            "description": "10 Corrupted Gauntlet completions as a team"
-          },
-          {
-            "position": 5,
-            "description": "5 Master clue completions per member"
-          },
-          {
-            "position": 6,
-            "description": "1 Fight Cave completion per member"
-          },
-          {
-            "position": 7,
-            "description": "25 Medium clues per member"
-          },
-          {
-            "position": 8,
-            "description": "25 Guardians of the Rift completions per member"
-          },
-          {
-            "position": 9,
-            "description": "5 Chambers of Xeric completions per member"
-          },
-          {
-            "position": 10,
-            "description": "You forgot MFA, head back 1 space",
-            "action": {
-              "type": "move",
-              "spaces": -1
-            }
-          },
-          {
-            "position": 11,
-            "description": "1 Zulrah unique per team"
-          },
-          {
-            "position": 12,
-            "description": "1 Dragon pickaxe from a Wilderness boss per team"
-          },
-          {
-            "position": 13,
-            "description": "1 God Wars Dungeon unique from any boss per team"
-          },
-          {
-            "position": 14,
-            "description": "Guthix Blesses You, roll again",
-            "action": {
-              "type": "rollAgain"
-            }
-          },
-          {
-            "position": 15,
-            "description": "2 Rings from Dagannoth Kings per team"
-          },
-          {
-            "position": 16,
-            "description": "1 Tombs of Amascut purple per team"
-          },
-          {
-            "position": 17,
-            "description": "1 Kalphite Queen head per team"
-          },
-          {
-            "position": 18,
-            "description": "1 Wintertodt unique per member"
-          },
-          {
-            "position": 19,
-            "description": "1 shard piece from Chaos Fanatic per team"
-          },
-          {
-            "position": 20,
-            "description": "1 unique drop from The Nightmare per team"
-          },
-          {
-            "position": 21,
-            "description": "50 Zalcano kill count per member"
-          },
-          {
-            "position": 22,
-            "description": "5 Obor kill count per member"
-          },
-          {
-            "position": 23,
-            "description": "1 King Black Dragon head per team"
-          },
-          {
-            "position": 24,
-            "description": "1 Armadyl crossbow or Saradomin hilt per team"
-          },
-          {
-            "position": 25,
-            "description": "1 Corporeal Beast unique per team"
-          },
-          {
-            "position": 26,
-            "description": "10 Elite clues per member"
-          },
-          {
-            "position": 27,
-            "description": "10 Soul Wars crates per member"
-          },
-          {
-            "position": 28,
-            "description": "1 Nex armor piece per team"
-          },
-          {
-            "position": 29,
-            "description": "1 Whip drop per team"
-          },
-          {
-            "position": 30,
-            "description": "5 Theater of Blood kill count per member"
-          },
-          {
-            "position": 31,
-            "description": "1 Sarachnis unique per team"
-          },
-          {
-            "position": 32,
-            "description": "Abyssal Demons teleport you back 3 spaces",
-            "action": {
-              "type": "move",
-              "spaces": -3
-            }
-          },
-          {
-            "position": 33,
-            "description": "1 Ring from a Wilderness boss per team"
-          },
-          {
-            "position": 34,
-            "description": "1 shard from Crazy Archaeologist per team"
-          },
-          {
-            "position": 35,
-            "description": "50 Beginner clues per member"
-          },
-          {
-            "position": 36,
-            "description": "1 Chambers of Xeric purple per team"
-          },
-          {
-            "position": 37,
-            "description": "What if this one is a T-Bow? Go back 1 space",
-            "action": {
-              "type": "move",
-              "spaces": -1
-            }
-          },
-          {
-            "position": 38,
-            "description": "1 unique from Vorkath per team"
-          },
-          {
-            "position": 39,
-            "description": "1 unique from Chaos Druids per team"
-          },
-          {
-            "position": 40,
-            "description": "1 unique from TzHaar monsters per member"
-          },
-          {
-            "position": 41,
-            "description": "Obtain 1 Champion scroll per team"
-          },
-          {
-            "position": 42,
-            "description": "1 Venator shard from Muspah per team"
-          },
-          {
-            "position": 43,
-            "description": "*Halo 3 Announcer* Slayer! Go forward 2 spaces",
-            "action": {
-              "type": "move",
-              "spaces": 2
-            }
-          },
-          {
-            "position": 44,
-            "description": "Complete 20 Hard clues per member"
-          },
-          {
-            "position": 45,
-            "description": "1 Slayer boss unique per team"
-          },
-          {
-            "position": 46,
-            "description": "1 Kree'arra armor piece per team"
-          },
-          {
-            "position": 47,
-            "description": "Any ancient totem per team"
-          },
-          {
-            "position": 48,
-            "description": "1 Blood shard drop per team"
-          },
-          {
-            "position": 49,
-            "description": "1 Dragon hat piece per team"
-          },
-          {
-            "position": 50,
-            "description": "1 Elven signet from crystal impling per team"
-          },
-          {
-            "position": 51,
-            "description": "100 Herbiboar kill count per team"
-          },
-          {
-            "position": 52,
-            "description": "1 Theater of Blood purple as a team"
-          },
-          {
-            "position": 53,
-            "description": "Full set of Naval outfit from Trouble Brewing per member"
-          },
-          {
-            "position": 54,
-            "description": "1 Enhanced teleport seed as a team"
-          },
-          {
-            "position": 55,
-            "description": "1 Bandos armor piece as a team"
-          },
-          {
-            "position": 56,
-            "description": "1 Dark bow from Dark Beast as a team"
-          },
-          {
-            "position": 57,
-            "description": "1 Zamorak hilt as a team"
-          },
-          {
-            "position": 58,
-            "description": "1 Scorpia unique as a team"
-          },
-          {
-            "position": 59,
-            "description": "Getting pretty close to the end, roll again",
-            "action": {
-              "type": "rollAgain"
-            }
-          },
-          {
-            "position": 60,
-            "description": "1 Zenyte shard drop as a team"
-          },
-          {
-            "position": 61,
-            "description": "1 Chaos Elemental unique as a team"
-          },
-          {
-            "position": 62,
-            "description": "1 Crystal grail as a team"
+  "game": {
+    "name": "OSRS Themed Board Game",
+    "board": {
+      "size": 62,
+      "spaces": [
+        {
+          "position": 1,
+          "description": "1 Barrows unique per member",
+          "verification": {
+            "type": "per_member"
           }
-        ]
-      }
+        },
+        {
+          "position": 2,
+          "description": "25 Vetion kills per member",
+          "verification": {
+            "type": "per_member"
+          }
+        },
+        {
+          "position": 3,
+          "description": "75 rewards at Tempoross per member",
+          "verification": {
+            "type": "per_member"
+          }
+        },
+        {
+          "position": 4,
+          "description": "10 Corrupted Gauntlet completions as a team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 5,
+          "description": "5 Master clue completions per member",
+          "verification": {
+            "type": "per_member"
+          }
+        },
+        {
+          "position": 6,
+          "description": "1 Fight Cave completion per member",
+          "verification": {
+            "type": "per_member"
+          }
+        },
+        {
+          "position": 7,
+          "description": "25 Medium clues per member",
+          "verification": {
+            "type": "per_member"
+          }
+        },
+        {
+          "position": 8,
+          "description": "25 Guardians of the Rift completions per member",
+          "verification": {
+            "type": "per_member"
+          }
+        },
+        {
+          "position": 9,
+          "description": "5 Chambers of Xeric completions per member",
+          "verification": {
+            "type": "per_member"
+          }
+        },
+        {
+          "position": 10,
+          "description": "Almighty Olm summons you, go back 1 space",
+          "action": {
+            "type": "move",
+            "spaces": -1
+          }
+        },
+        {
+          "position": 11,
+          "description": "1 Zulrah unique per team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 12,
+          "description": "1 Dragon pickaxe from a Wilderness boss per team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 13,
+          "description": "1 God Wars Dungeon unique from any boss per team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 14,
+          "description": "Guthix Blesses You, roll again",
+          "action": {
+            "type": "rollAgain"
+          }
+        },
+        {
+          "position": 15,
+          "description": "2 Rings from Dagannoth Kings per team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 16,
+          "description": "1 Tombs of Amascut purple per team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 17,
+          "description": "1 Kalphite Queen head per team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 18,
+          "description": "1 Wintertodt unique per member",
+          "verification": {
+            "type": "per_member"
+          }
+        },
+        {
+          "position": 19,
+          "description": "1 shard piece from Chaos Fanatic per team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 20,
+          "description": "1 unique drop from The Nightmare per team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 21,
+          "description": "50 Zalcano kill count per member",
+          "verification": {
+            "type": "per_member"
+          }
+        },
+        {
+          "position": 22,
+          "description": "5 Obor kill count per member",
+          "verification": {
+            "type": "per_member"
+          }
+        },
+        {
+          "position": 23,
+          "description": "1 King Black Dragon head per team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 24,
+          "description": "1 Armadyl crossbow or Saradomin hilt per team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 25,
+          "description": "1 Corporeal Beast unique per team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 26,
+          "description": "10 Elite clues per member",
+          "verification": {
+            "type": "per_member"
+          }
+        },
+        {
+          "position": 27,
+          "description": "10 Soul Wars crates per member",
+          "verification": {
+            "type": "per_member"
+          }
+        },
+        {
+          "position": 28,
+          "description": "1 Nex armor piece per team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 29,
+          "description": "1 Whip drop per team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 30,
+          "description": "5 Theater of Blood kill count per member",
+          "verification": {
+            "type": "per_member"
+          }
+        },
+        {
+          "position": 31,
+          "description": "1 Sarachnis unique per team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 32,
+          "description": "Abyssal Demons teleport you back 3 spaces",
+          "action": {
+            "type": "move",
+            "spaces": -3
+          }
+        },
+        {
+          "position": 33,
+          "description": "1 Ring from a Wilderness boss per team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 34,
+          "description": "1 shard from Crazy Archaeologist per team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 35,
+          "description": "50 Beginner clues per member",
+          "verification": {
+            "type": "per_member"
+          }
+        },
+        {
+          "position": 36,
+          "description": "1 Chambers of Xeric purple per team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 37,
+          "description": "What if this one is a T-Bow? Go back 1 space",
+          "action": {
+            "type": "move",
+            "spaces": -1
+          }
+        },
+        {
+          "position": 38,
+          "description": "1 unique from Vorkath per team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 39,
+          "description": "1 unique from Chaos Druids per team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 40,
+          "description": "1 unique from TzHaar monsters per member",
+          "verification": {
+            "type": "per_member"
+          }
+        },
+        {
+          "position": 41,
+          "description": "Obtain 1 Champion scroll per team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 42,
+          "description": "1 Venator shard from Muspah per team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 43,
+          "description": "*Halo 3 Announcer* Slayer! Go forward 2 spaces",
+          "action": {
+            "type": "move",
+            "spaces": 2
+          }
+        },
+        {
+          "position": 44,
+          "description": "Complete 20 Hard clues per member",
+          "verification": {
+            "type": "per_member"
+          }
+        },
+        {
+          "position": 45,
+          "description": "1 Slayer boss unique per team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 46,
+          "description": "1 Kree'arra armor piece per team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 47,
+          "description": "Any ancient totem per team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 48,
+          "description": "1 Blood shard drop per team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 49,
+          "description": "1 Dragon hat piece per team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 50,
+          "description": "1 Elven signet from crystal impling per team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 51,
+          "description": "100 Herbiboar kill count per team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 52,
+          "description": "1 Theater of Blood purple as a team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 53,
+          "description": "Full set of Naval outfit from Trouble Brewing per member",
+          "verification": {
+            "type": "per_member"
+          }
+        },
+        {
+          "position": 54,
+          "description": "1 Enhanced teleport seed as a team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 55,
+          "description": "1 Bandos armor piece as a team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 56,
+          "description": "1 Dark bow from Dark Beast as a team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 57,
+          "description": "1 Zamorak hilt as a team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 58,
+          "description": "1 Scorpia unique as a team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 59,
+          "description": "Successfully Escape JD's Playpen, roll again",
+          "action": {
+            "type": "rollAgain"
+          }
+        },
+        {
+          "position": 60,
+          "description": "1 Zenyte shard drop as a team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 61,
+          "description": "1 Chaos Elemental unique as a team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 62,
+          "description": "1 Crystal grail as a team",
+          "verification": {
+            "type": "per_team"
+          }
+        }
+      ]
     }
   }
-  
+}
