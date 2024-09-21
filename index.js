@@ -12,6 +12,7 @@ const admins = ['196901285071552513', '628042644865679382', '756701883749498981'
 
 // Create a new client instance
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+client.admins = admins; // Set the admins on the client instance
 
 client.commands = new Collection();
 client.cooldowns = new Collection();
@@ -79,7 +80,7 @@ client.on('interactionCreate', async interaction => {
     if (command) {
         try {
             // Check if the command is admin-only
-            if (command.adminOnly && !admins.includes(interaction.user.id)) {
+            if (command.adminOnly && !client.admins.includes(interaction.user.id)) {
                 return interaction.reply({ content: 'You do not have permission to use this command.', ephemeral: true });
             }
 
@@ -107,3 +108,8 @@ process.on('uncaughtException', error => {
 
 // Log in to Discord with your client's token
 client.login(token);
+
+// Log that the bot is running
+client.once('ready', () => {
+    console.log(`${client.user.tag} is now running!`);
+});

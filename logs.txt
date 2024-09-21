@@ -102,3 +102,15 @@
 [2024-09-21T16:46:07.463Z] Team: blue | Tile: 4 | Description: 10 Corrupted Gauntlet completions as a team | Verification: per_team
 [2024-09-21T16:46:07.607Z] User: vngchrome (ID: 196901285071552513) | Executed command `starttile`
 [2024-09-21T16:46:22.622Z] User: vngchrome (ID: 196901285071552513) | Executed command `endtile`
+[2024-09-21T16:59:00.833Z] User: vngchrome (ID: 196901285071552513) | Executed command `verify`
+[2024-09-21T17:00:46.198Z] User: vngchrome (ID: 196901285071552513) | Executed command `verify`
+[2024-09-21T17:03:04.926Z] User: vngchrome (ID: 196901285071552513) | Executed command `verify`
+[2024-09-21T17:05:28.991Z] User: vngchrome (ID: 196901285071552513) | Executed command `verify`
+[2024-09-21T17:11:55.976Z] User: vngchrome (ID: 196901285071552513) | Executed command `verify`
+[2024-09-21T17:13:14.393Z] User: vngchrome (ID: 196901285071552513) | Executed command `verify`
+[2024-09-21T17:14:34.032Z] User: vngchrome (ID: 196901285071552513) | Executed command `verify`
+[2024-09-21T17:18:39.954Z] User: vngchrome (ID: 196901285071552513) | Executed command `verify`
+[2024-09-21T17:23:23.520Z] User: vngchrome (ID: 196901285071552513) | Executed command `verify`
+[2024-09-21T17:24:40.355Z] User: vngchrome (ID: 196901285071552513) | Executed command `verify`
+[2024-09-21T17:29:22.159Z] User: vngchrome (ID: 196901285071552513) | Executed command `verify`
+[2024-09-21T17:30:17.505Z] User: vngchrome (ID: 196901285071552513) | Executed command `verify`

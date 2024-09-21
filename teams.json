@@ -25,18 +25,69 @@
       {
         "discordID": "112233445566778899",
         "discordName": "User3",
-        "verificationLinks": {}
+        "verificationLinks": {
+          "5": {
+            "preVerificationLink": "https://cdn.discordapp.com/ephemeral-attachments/1287092296504053842/Screenshot_2024-08-11_033841.png",
+            "postVerificationLink": "",
+            "isVerified": false
+          }
+        }
       },
       {
         "discordID": "998877665544332211",
         "discordName": "User4",
-        "verificationLinks": {}
+        "verificationLinks": {
+          "5": {
+            "preVerificationLink": "https://cdn.discordapp.com/ephemeral-attachments/1287092296504053842/Screenshot_2024-08-11_033841.png",
+            "postVerificationLink": "https://cdn.discordapp.com/ephemeral-attachments/1287092296504053842/Screenshot_2024-08-11_053841.png",
+            "isVerified": false
+          },
+          "16": {
+            "preVerificationLink": "",
+            "postVerificationLink": "",
+            "isVerified": true
+          }
+        }
       }
     ]
   },
   "TeamCharlie": {
     "position": 7,
-    "members": []
+    "members": [
+      {
+        "discordID": "445566778899001122",
+        "discordName": "User5",
+        "verificationLinks": {
+          "7": {
+            "preVerificationLink": "https://cdn.discordapp.com/ephemeral-attachments/1287092296504053842/Screenshot_2024-08-22_033841.png",
+            "postVerificationLink": "",
+            "isVerified": true
+          }
+        }
+      },
+      {
+        "discordID": "556677889900112233",
+        "discordName": "User6",
+        "verificationLinks": {
+          "7": {
+            "preVerificationLink": "https://cdn.discordapp.com/ephemeral-attachments/1287092296504053842/Screenshot_2024-08-22_123841.png",
+            "postVerificationLink": "",
+            "isVerified": true
+          }
+        }
+      },
+      {
+        "discordID": "667788990011223344",
+        "discordName": "User7",
+        "verificationLinks": {
+          "7": {
+            "preVerificationLink": "",
+            "postVerificationLink": "https://cdn.discordapp.com/ephemeral-attachments/1287092296504053842/Screenshot_2024-08-22_223841.png",
+            "isVerified": true
+          }
+        }
+      }
+    ]
   },
   "TeamDelta": {
     "position": 34,
@@ -64,28 +115,28 @@
           },
           "4": {
             "preVerificationLink": "",
-            "postVerificationLink": "https://cdn.discordapp.com/ephemeral-attachments/1287086134748516444/1287092565589491863/Screenshot_2024-09-16_120940.png?ex=66f049dc&is=66eef85c&hm=a75c9072ee24524bf2636de120381aa817766e837bd329c7ded0c1060041a11e&",
-            "isVerified": false
+            "postVerificationLink": "https://cdn.discordapp.com/ephemeral-attachments/1287086134748516444/1287092565589491863/Screenshot_2024-09-16_120940.png",
+            "isVerified": true
           },
           "5": {
-            "preVerificationLink": "https://cdn.discordapp.com/ephemeral-attachments/1287080243055820933/1287087162466242601/Screenshot_2024-07-28_093049.png?ex=66f044d4&is=66eef354&hm=a3d8c8e4d3145d615bfe5c8e7ea0ff2daaa7c5821cb334eb901cf69539e7da5b&",
-            "postVerificationLink": "https://cdn.discordapp.com/ephemeral-attachments/1287086134748516444/1287087229491220490/Screenshot_2024-07-28_163834.png?ex=66f044e4&is=66eef364&hm=3164fb5998959aa4aa3687af0948109ba4273209600106e0ed0c18d562ed192d&",
+            "preVerificationLink": "https://cdn.discordapp.com/ephemeral-attachments/1287080243055820933/1287087162466242601/Screenshot_2024-07-28_093049.png",
+            "postVerificationLink": "https://cdn.discordapp.com/ephemeral-attachments/1287086134748516444/1287087229491220490/Screenshot_2024-07-28_163834.png",
             "isVerified": true
           },
           "11": {
             "preVerificationLink": "",
-            "postVerificationLink": "https://cdn.discordapp.com/ephemeral-attachments/1287086134748516444/1287090313667543132/Screenshot_2024-08-22_224257.png?ex=66f047c3&is=66eef643&hm=5bfa69176c8fae3218b08a37c80a8a34b79f700bb224019f36caca86471ba359&",
+            "postVerificationLink": "https://cdn.discordapp.com/ephemeral-attachments/1287086134748516444/1287090313667543132/Screenshot_2024-08-22_224257.png",
             "isVerified": true
           },
           "16": {
             "preVerificationLink": "",
-            "postVerificationLink": "https://cdn.discordapp.com/ephemeral-attachments/1287086134748516444/1287091648563515555/Screenshot_2024-08-22_224257.png?ex=66f04902&is=66eef782&hm=6a9fc2598fdb67c4e6fa2d7026d0933dd53a288185a0cbeb220b620a2879e941&",
+            "postVerificationLink": "https://cdn.discordapp.com/ephemeral-attachments/1287086134748516444/1287091648563515555/Screenshot_2024-08-22_224257.png",
             "isVerified": false
           },
           "22": {
-            "preVerificationLink": "https://cdn.discordapp.com/ephemeral-attachments/1287080243055820933/1287092296504053842/Screenshot_2024-09-11_033841.png?ex=66f0499c&is=66eef81c&hm=18ff1088d152799b4328cda7c9de57d8f5115c4f2b8e1dede7c607cd9a925fdc&",
+            "preVerificationLink": "https://cdn.discordapp.com/ephemeral-attachments/1287080243055820933/1287092296504053842/Screenshot_2024-09-11_033841.png",
             "postVerificationLink": "",
-            "isVerified": false
+            "isVerified": true
           }
         }
       },
@@ -94,9 +145,9 @@
         "discordName": "User3",
         "verificationLinks": {
           "22": {
-            "preVerificationLink": "https://cdn.discordapp.com/ephemeral-attachments/1287080243055820933/1287092123438682142/Screenshot_2024-08-22_224257.png?ex=66f04973&is=66eef7f3&hm=841b35c9b3b7101fd3c61dfa660fe6972379298ffb26a007e89e72b54a62eaea&",
+            "preVerificationLink": "https://cdn.discordapp.com/ephemeral-attachments/1287080243055820933/1287092123438682142/Screenshot_2024-08-22_224257.png",
             "postVerificationLink": "",
-            "isVerified": false
+            "isVerified": true
           }
         }
       }
