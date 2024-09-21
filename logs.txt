@@ -114,3 +114,48 @@
 [2024-09-21T17:24:40.355Z] User: vngchrome (ID: 196901285071552513) | Executed command `verify`
 [2024-09-21T17:29:22.159Z] User: vngchrome (ID: 196901285071552513) | Executed command `verify`
 [2024-09-21T17:30:17.505Z] User: vngchrome (ID: 196901285071552513) | Executed command `verify`
+[2024-09-21T17:41:02.279Z] User: vngchrome (ID: 196901285071552513) | Executed command `verify`
+[2024-09-21T17:47:03.523Z] User: vngchrome (ID: 196901285071552513) | Executed command `scoreboard`
+[2024-09-21T17:47:22.564Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 4, Rolled: 6, Landed on: 10, Space Description: Almighty Olm summons you, go back 1 space, Additional Move: -1, Final Position: 9, Final Space Description: 5 Chambers of Xeric completions per member
+[2024-09-21T17:47:22.708Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-09-21T17:47:31.041Z] User: vngchrome (ID: 196901285071552513) | Executed command `bribe`
+[2024-09-21T17:49:09.871Z] User: vngchrome (ID: 196901285071552513) | Executed command `bribe`
+[2024-09-21T17:50:38.577Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 6, Rolled: 1, Landed on: 7, Space Description: 25 Medium clues per member, Additional Move: 0, Final Position: 7, Final Space Description: 25 Medium clues per member
+[2024-09-21T17:50:38.745Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-09-21T17:50:47.420Z] User: vngchrome (ID: 196901285071552513) | Executed command `scoreboard`
+[2024-09-21T17:51:05.578Z] User: vngchrome (ID: 196901285071552513) | Executed command `bribe`
+[2024-09-21T17:51:58.116Z] User: vngchrome (ID: 196901285071552513) | Executed command `bribe`
+[2024-09-21T17:53:34.752Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 2, Rolled: 2, Landed on: 4, Space Description: 10 Corrupted Gauntlet completions as a team, Additional Move: 0, Final Position: 4, Final Space Description: 10 Corrupted Gauntlet completions as a team
+[2024-09-21T17:53:34.933Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-09-21T17:53:38.388Z] User: vngchrome (ID: 196901285071552513) | Executed command `bribe`
+[2024-09-21T17:55:34.467Z] User: vngchrome (ID: 196901285071552513) | Executed command `bribe`
+[2024-09-21T17:59:52.212Z] User: vngchrome (ID: 196901285071552513) | Executed command `bribe`
+[2024-09-21T17:59:57.319Z] User: vngchrome (ID: 196901285071552513) | Executed command `bribe`
+[2024-09-21T18:00:02.288Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 1, Rolled: 5, Landed on: 6, Space Description: 1 Fight Cave completion per member, Additional Move: 0, Final Position: 6, Final Space Description: 1 Fight Cave completion per member
+[2024-09-21T18:00:02.500Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-09-21T18:00:06.160Z] User: vngchrome (ID: 196901285071552513) | Executed command `bribe`
+[2024-09-21T18:05:02.142Z] User: vngchrome (ID: 196901285071552513) | Executed command `scoreboard`
+[2024-09-21T18:07:21.623Z] User: vngchrome (ID: 196901285071552513) | Executed command `scoreboard`
+[2024-09-21T18:07:29.665Z] User: vngchrome (ID: 196901285071552513) | Executed command `startgame`
+[2024-09-21T18:07:34.386Z] User: vngchrome (ID: 196901285071552513) | Executed command `scoreboard`
+[2024-09-21T18:09:41.695Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 1, Rolled: 3, Landed on: 4, Space Description: 10 Corrupted Gauntlet completions as a team, Additional Move: 0, Final Position: 4, Final Space Description: 10 Corrupted Gauntlet completions as a team
+[2024-09-21T18:09:41.968Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-09-21T18:09:48.754Z] User: vngchrome (ID: 196901285071552513) | Executed command `startgame`
+[2024-09-21T18:12:16.469Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 1, Rolled: 2, Landed on: 3, Space Description: 75 rewards at Tempoross per member, Additional Move: 0, Final Position: 3, Final Space Description: 75 rewards at Tempoross per member
+[2024-09-21T18:12:16.594Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-09-21T18:12:23.425Z] User: vngchrome (ID: 196901285071552513) | Executed command `begingame`
+[2024-09-21T18:12:52.736Z] User: vngchrome (ID: 196901285071552513) | Executed command `scoreboard`
+[2024-09-21T18:26:20.288Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-09-21T18:26:25.763Z] User: vngchrome (ID: 196901285071552513) | Executed command `jointeam`
+[2024-09-21T18:26:28.839Z] User: vngchrome (ID: 196901285071552513) | Command: jointeam | Changes: {"teamJoined":"TeamAlpha","newMember":{"discordID":"196901285071552513","discordName":"vngchrome"}}
+[2024-09-21T18:26:32.220Z] User: vngchrome (ID: 196901285071552513) | Executed command `scoreboard`
+[2024-09-21T18:29:28.715Z] User: vngchrome (ID: 196901285071552513) | Executed command `scoreboard`
+[2024-09-21T18:29:34.969Z] User: vngchrome (ID: 196901285071552513) | Executed command `teaminfo`
+[2024-09-21T18:29:54.689Z] User: vngchrome (ID: 196901285071552513) | Executed command `teaminfo`
+[2024-09-21T18:30:04.727Z] User: vngchrome (ID: 196901285071552513) | Command: leaveteam | Left team: TeamAlpha
+[2024-09-21T18:30:04.923Z] User: vngchrome (ID: 196901285071552513) | Executed command `leaveteam`
+[2024-09-21T18:30:10.962Z] User: vngchrome (ID: 196901285071552513) | Command: create_team | Changes: Added team Blue
+[2024-09-21T18:30:11.119Z] User: vngchrome (ID: 196901285071552513) | Executed command `create_team`
+[2024-09-21T18:30:13.422Z] User: vngchrome (ID: 196901285071552513) | Executed command `scoreboard`
+[2024-09-21T18:30:17.996Z] User: vngchrome (ID: 196901285071552513) | Executed command `teaminfo`
+[2024-09-21T18:37:35.151Z] User: vngchrome (ID: 196901285071552513) | Executed command `verify`
