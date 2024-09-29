@@ -73,7 +73,7 @@ module.exports = {
                 console.log('Logged start tile (per_team) to logs.txt');
 
                 // For per_team tiles, no pre-verification is needed
-                return interaction.editReply({ content: `Good luck! This is a per-team tile: ${currentSpace.description}. Just submit the final verification when you complete the task!` });
+                return interaction.editReply({ content: `This is a per-team tile: ${currentSpace.description}. Just submit the final verification when you complete the task! Good luck!` });
             } else if (verificationType === 'per_member') {
                 // For per_member tiles, ensure an image is provided
                 const image = interaction.options.getAttachment('image');

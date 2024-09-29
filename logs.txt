@@ -187,3 +187,27 @@
 [2024-09-24T17:36:41.129Z] User: vngchrome (ID: 196901285071552513) | Executed command `bribe`
 [2024-09-24T17:36:53.064Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 1, Rolled: 3, Landed on: 4, Space Description: 10 Corrupted Gauntlet completions as a team, Additional Move: 0, Final Position: 4, Final Space Description: 10 Corrupted Gauntlet completions as a team
 [2024-09-24T17:36:53.322Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-09-24T17:58:34.465Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 4, Rolled: 5, Landed on: 9, Space Description: 5 Chambers of Xeric completions per member, Additional Move: 0, Final Position: 9, Final Space Description: 5 Chambers of Xeric completions per member
+[2024-09-24T17:58:34.620Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-09-24T18:01:58.084Z] User: vngchrome (ID: 196901285071552513) | Executed command `scoreboard`
+[2024-09-24T18:02:28.400Z] User: vngchrome (ID: 196901285071552513) | Executed command `scoreboard`
+[2024-09-24T18:02:51.243Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 9, Rolled: 2, Landed on: 11, Space Description: 1 Zulrah unique per team, Additional Move: 0, Final Position: 11, Final Space Description: 1 Zulrah unique per team
+[2024-09-24T18:02:51.435Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-09-24T18:03:14.831Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-09-24T18:04:53.803Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 11, Rolled: 2, Landed on: 13, Space Description: 1 God Wars Dungeon unique from any boss per team, Additional Move: 0, Final Position: 13, Final Space Description: 1 God Wars Dungeon unique from any boss per team
+[2024-09-24T18:04:54.188Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-09-24T18:04:57.287Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 13, Rolled: 4, Landed on: 17, Space Description: 1 Kalphite Queen head per team, Additional Move: 0, Final Position: 17, Final Space Description: 1 Kalphite Queen head per team
+[2024-09-24T18:04:57.450Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-09-24T18:04:59.905Z] User: vngchrome (ID: 196901285071552513) | Executed command `bribe`
+[2024-09-24T18:05:02.704Z] User: vngchrome (ID: 196901285071552513) | Executed command `scoreboard`
+[2024-09-24T18:05:33.790Z] User: vngchrome (ID: 196901285071552513) | Executed command `teaminfo`
+[2024-09-24T18:06:21.376Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 15, Rolled: 4, Landed on: 19, Space Description: 1 shard piece from Chaos Fanatic per team, Additional Move: 0, Final Position: 19, Final Space Description: 1 shard piece from Chaos Fanatic per team
+[2024-09-24T18:06:21.545Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-09-24T18:10:59.572Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 19, Rolled: 2, Landed on: 21, Space Description: 50 Zalcano kill count per member, Additional Move: 0, Final Position: 21, Final Space Description: 50 Zalcano kill count per member
+[2024-09-24T18:10:59.771Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-09-24T18:11:10.555Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 21, Rolled: 6, Landed on: 27, Space Description: 10 Soul Wars crates per member, Additional Move: 0, Final Position: 27, Final Space Description: 10 Soul Wars crates per member
+[2024-09-24T18:11:10.833Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-09-24T18:11:13.576Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 27, Rolled: 2, Landed on: 29, Space Description: 1 Whip drop per team, Additional Move: 0, Final Position: 29, Final Space Description: 1 Whip drop per team
+[2024-09-24T18:11:13.733Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-09-24T18:11:37.186Z] Team: Blue | Tile: 29 | Description: 1 Whip drop per team | Verification: per_team
+[2024-09-24T18:11:37.317Z] User: vngchrome (ID: 196901285071552513) | Executed command `starttile`

@@ -80,10 +80,17 @@ module.exports = {
                 const spaceDetails = gameBoardData.game.board.spaces.find(space => space.position === userTeam.position);
                 if (spaceDetails) {
                     initialSpaceDescription = spaceDetails.description || 'No description available';
+                    
+                    // Check for action space
                     if (spaceDetails.action && spaceDetails.action.type === 'move') {
                         additionalMovement = spaceDetails.action.spaces || 0;
                         userTeam.position += additionalMovement;
                         actionMessage = `Result: You moved ${additionalMovement > 0 ? 'forward' : 'backward'} ${Math.abs(additionalMovement)} space(s).`;
+                    }
+                    
+                    // Check if the new space is a per_member space
+                    if (spaceDetails.verification && spaceDetails.verification.type === 'per_member') {
+                        actionMessage += `\nReminder: You landed on a 'per_member' tile. Please submit your collection log or use the !kc command before proceeding.`;
                     }
                 }
             }
@@ -104,16 +111,10 @@ module.exports = {
             console.log('Roll logged to logs.txt');
 
             // Construct the detailed response message
-            let responseMessage = `You rolled a ${roll}. `;
-            if (newPosition === lastSpacePosition) {
-                responseMessage += `You have landed on the final space! ${initialSpaceDescription}\n`;
-            } else {
-                responseMessage += `You landed on position ${newPosition}. ${initialSpaceDescription}\n`;
-            }
+            let responseMessage = `You rolled a ${roll}. You landed on position ${newPosition}. ${initialSpaceDescription}`;
             if (actionMessage) {
-                responseMessage += `${actionMessage}\n`;
+                responseMessage += `\n${actionMessage}`;
             }
-            responseMessage += `Your team is now on position ${finalPosition} - ${finalSpaceDescription}.`;
 
             // Reply with the detailed result
             await interaction.editReply({ content: responseMessage });
