@@ -3,446 +3,690 @@
     "name": "OSRS Themed Board Game",
     "board": {
       "size": 62,
+      "startText": "Your party ventures deep into Prifddinas, chasing the elusive crystal rabbit. The Crystal Grail is within sight... until a deadly ambush takes you by surprise. One by one, you fall. The grail slips from your grasp, and darkness surrounds you.",
       "spaces": [
         {
-          "position": 1,
-          "description": "1 Barrows unique per member",
-          "verification": {
-            "type": "per_member"
+          "id": 1,
+          "title": "Barrows Bounty",
+          "description": "Each member must acquire 1 Barrows unique.",
+          "completion_requirements": "Each member must obtain a unique drop.",
+          "team_verification": "per_member",
+          "notes": {
+            "prefix": "As the darkness closes in, the Mysterious Stranger appears. He silently drags your broken party from the battlefield, tending to your wounds in secret. As you awaken, he gives you an ultimatum: 'You owe me now. Each of you will retrieve a unique Barrows piece for me, or your debt remains unpaid.",
+            "suffix": "The Mysterious Stranger takes the Barrows pieces with a nod. 'Your debt is paid, but there's more ahead.' Without another word, he vanishes, leaving you to decide your next steps"
           }
         },
         {
-          "position": 2,
-          "description": "25 Vetion kills per member",
-          "verification": {
-            "type": "per_member"
+          "id": 2,
+          "title": "Vetion Slaughter",
+          "description": "Each member must eliminate 25 Vetion bosses.",
+          "completion_requirements": "Each member must achieve 25 kills individually.",
+          "team_verification": "per_member",
+          "notes": {
+            "prefix": "Your party stumbles into a pub, you find a bounty poster for the fearsome Vet'ion. The tavernkeep eyes you warily, 'You're not the first to try and claim that bounty. But if you're foolish enough to try, I won't stop you.'",
+            "suffix": "Word of your victory spreads quickly. The tavernkeep nods in respect as you return. 'Didn't think I'd see the day someone bested Vet'ion. You've earned your reward, but beware—there are always greater dangers lurking beyond the next corner"
           }
         },
         {
-          "position": 3,
-          "description": "75 rewards at Tempoross per member",
-          "verification": {
-            "type": "per_member"
+          "id": 3,
+          "title": "Tempoross Mastery",
+          "description": "Each member must collect 75 rewards from Tempoross.",
+          "completion_requirements": "Each member must collect 75 rewards individually.",
+          "team_verification": "per_member",
+          "notes": {
+            "prefix": "The party finds themselves on the docks of Unkah, where a crowd has gathered. A sailor approaches you, 'You look like you can handle yourself. We need help with Tempoross, and we're willing to pay for it.'",
+            "suffix": "After completing the task, the sailor greets you with a grin. 'Didn't think you'd make it back in one piece. Here's your reward, as promised. But remember, the sea is always hungry for more. Be careful where you sail next"
           }
         },
         {
-          "position": 4,
-          "description": "10 Corrupted Gauntlet completions as a team",
-          "verification": {
-            "type": "per_team"
+          "id": 4,
+          "title": "Corrupted Gauntlet Conqueror",
+          "description": "The team must collectively complete 10 Corrupted Gauntlet runs.",
+          "completion_requirements": "The total runs of the team must sum to 10.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "Prifddinas is a city of secrets, and memories of what happened flood your mind. You're not ready for your rematch with the rabbit quite yet. The party is approached by Bryn, 'Ah, it's you. The foolish adventurers hunting for the grail. You're all still weak, but come with me and I'll show you a chamber to increase your strength. Be warned—it's not for the faint of heart.",
+            "suffix": "Bryn watches as you emerge from the chamber, stronger than before. 'Not bad,' he says with a smirk. 'But strength alone won't be enough to face what's coming. Keep training, and maybe—just maybe—you'll be ready for the rabbit.' He turns away, leaving you to contemplate your next move"
           }
         },
         {
-          "position": 5,
-          "description": "5 Master clue completions per member",
-          "verification": {
-            "type": "per_member"
+          "id": 5,
+          "title": "Master Clue Hunter",
+          "description": "Each member must complete 5 Master clues.",
+          "completion_requirements": "Each member must complete 5 clues.",
+          "team_verification": "per_member",
+          "notes": {
+            "prefix": "You take a short rest and overhear a gang of hunters—not bounty hunters, but treasure hunters. They speak in hushed tones of a stash of untold riches, reserved for those capable of completing master clues",
+            "suffix": "As you complete the master clue, the treasure hunters immediately notice. Their faces twist with anger as one of them shouts, 'Oi! That was our loot!' Without hesitation, they chase after you, determined to reclaim what they believe is rightfully theirs. You escape, but the hunters are relentless. You must be cautious of their pursuit"
           }
         },
         {
-          "position": 6,
-          "description": "1 Fight Cave completion per member",
-          "verification": {
-            "type": "per_member"
+          "id": 6,
+          "title": "Fight Cave Victor",
+          "description": "Each member must survive the Fight Cave and defeat TzTok-Jad.",
+          "completion_requirements": "Each member must individually defeat TzTok-Jad.",
+          "team_verification": "per_member",
+          "notes": {
+            "prefix": "The Makeover Mage approaches your party, 'You are by far the worst looking bunch I've ever seen. You know what would make you look better? A cape, of course. But not just any cape, the fire cape. Rumour has it TzTok-Jad in the Fight Caves is the only place to obtain one.'",
+            "suffix": "As you return, fire cape in hand, the Makeover Mage grins. 'I knew you'd get it!' But just as you hand it over, his form flickers and shrinks, revealing a nimble, scrawny dwarf. 'Thanks, suckers! I could never handle TzTok-Jad myself!' With a mischievous cackle, he bolts for the exit. The party chases after him, but despite his weak appearance, he's surprisingly quick and vanishes into the distance before you can catch him"
           }
         },
         {
-          "position": 7,
-          "description": "25 Medium clues per member",
-          "verification": {
-            "type": "per_member"
+          "id": 7,
+          "title": "Medium Clue Hunter",
+          "description": "Each member must complete 25 Medium clue scrolls.",
+          "completion_requirements": "Each member must complete 25 Medium clues.",
+          "team_verification": "per_member",
+          "notes": {
+            "prefix": "While traversing through the swamp, the party stumbles into Zanaris. A group of fairies approach you, 'Our treasure room is looking a bit empty. We need your help to fill it up. Solve these clues, and we'll reward you handsomely.'",
+            "suffix": "'After solving the clues, you return to the fairies with your spoils. They inspect the treasure with gleaming eyes. 'You've done well,' one of them chirps. But as they hand over your reward, you notice them snickering. Before you can react, they vanish into thin air, leaving behind only a cryptic note: 'Sit rat'"
           }
         },
         {
-          "position": 8,
-          "description": "25 Guardians of the Rift completions per member",
-          "verification": {
-            "type": "per_member"
+          "id": 8,
+          "title": "Guardians of the Rift Mastery",
+          "description": "Each member must complete 25 Guardians of the Rift runs.",
+          "completion_requirements": "Each member must complete 25 runs individually.",
+          "team_verification": "per_member",
+          "notes": {
+            "prefix": "While recovering from your adventures, somebody in the middle of the night swipes your runepouch. Desperate to get it back your party heads to the authorities who govern all magical crimes, the wizards' tower. 'Cant you see we are far to busy trying to keep the rifts under control?' the wizards say. 'If you want your pouch back you'll have to help us out.'",
+            "suffix": "After you finish helping, the wizards toss your runepouch back to you. 'Did you really think it was stolen?' one sneers. 'We took it. We needed your help, and this was the easiest way to make you cooperate.' Their eyes gleam with malice, leaving you to wonder what other secrets they're hiding"
           }
         },
         {
-          "position": 9,
-          "description": "5 Chambers of Xeric completions per member",
-          "verification": {
-            "type": "per_member"
+          "id": 9,
+          "title": "Chambers of Xeric Veteran",
+          "description": "Each member must complete 5 Chambers of Xeric runs.",
+          "completion_requirements": "Each member must complete 5 runs.",
+          "team_verification": "per_member",
+          "notes": {
+            "prefix": "Xeric's voice echoes in your mind, visions of a bow and robes capable of increasing your power fill your head. 'You seek power, but are you willing to face the trials that come with it?'",
+            "suffix": "You barely make it out of the trials, battered and weary, stumbling just outside the chamber. The air feels lighter here, but the tension lingers. Exhausted, your party sets up camp, resting under the shadow of the trials you've just escaped"
           }
         },
         {
-          "position": 10,
-          "description": "Almighty Olm summons you, go back 1 space",
-          "action": {
-            "type": "move",
-            "spaces": -1
+          "id": 10,
+          "title": "Almighty Olm's Wrath",
+          "description": "Almighty Olm summons you, go back 1 space.",
+          "completion_requirements": "action",
+          "team_verification": "move_back",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 11,
-          "description": "1 Zulrah unique per team",
-          "verification": {
-            "type": "per_team"
+          "id": 11,
+          "title": "Zulrah Slayer",
+          "description": "The team must obtain 1 Zulrah unique.",
+          "completion_requirements": "Only one unique drop is required for the entire team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "Poison clouds fill the air. You see what looks to be a small gnome child tied to a post on a small island. Your party stealthily tries to save the child, but he shouts 'WHAT ARE YOU DOING?!' drawing the attention of everyone around. Zulrah appears angrily that you would disturb his meal and begins protecting what is his.",
+            "suffix": "After a hard-fought battle, your party stands victorious over Zulrah. Among the remains, you find a strange, shimmering item unlike anything you've seen before. Though you're unsure of its true nature, you know it's valuable—worth a fortune. With the tension finally easing, you gather the item and begin your journey back to town, eager to sell your newfound treasure and reap the rewards of your victory"
           }
         },
         {
-          "position": 12,
-          "description": "1 Dragon pickaxe from a Wilderness boss per team",
-          "verification": {
-            "type": "per_team"
+          "id": 12,
+          "title": "Wilderness Boss Hunter",
+          "description": "The team must obtain 1 Dragon pickaxe from a Wilderness boss.",
+          "completion_requirements": "Only one Dragon pickaxe is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "While resupplying at the Grand Exchange, the crowd murmurs as an adventurer crawls toward you, beaten and bruised. Someone whispers, 'That's Torvald the Unyielding', a legendary warrior who's faced countless foes. You overhear the crowds conversations 'He's been hunting the Wilderness bosses for weeks, what is he doing out there?' Torvald looks up at you and hands you a map with several locations marked on it. At the bottom of the map, it reads 'Dragon Pickaxe'",
+            "suffix": "After braving the dangers of the Wilderness and retrieving the Dragon Pickaxe, you return to the Grand Exchange. The crowd watches in awe as you present the pickaxe. Torvald is nowhere to be found, but the whispers around you grow louder. 'They actually did it…,' someone murmurs. As you pocket the Dragon Pickaxe, you can’t help but wonder if this was only part of a larger hunt that Torvald had started. Whatever lies ahead, the pickaxe is now yours"
           }
         },
         {
-          "position": 13,
-          "description": "1 God Wars Dungeon unique from any boss per team",
-          "verification": {
-            "type": "per_team"
+          "id": 13,
+          "title": "God Wars Dungeon Champion",
+          "description": "The team must obtain 1 unique from any God Wars Dungeon boss.",
+          "completion_requirements": "Only one unique is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "Snow crunches beneath your feet, and the wind howls through the mountains. You find yourself at the entrance to the God Wars Dungeon. As you approach the entrance, the voices of each general begin to cloud your mind. The voices escalate in volume when suddenly, your mind goes quiet. A deep loud voice leaves you with a final command 'MAKE A CHOICE'",
+            "suffix": "After choosing a general and facing them in battle, you emerge victorious, though battered and weary. As the dust settles, you notice something left behind—a mysterious weapon piece, radiating an unfamiliar power. The voice booms one final time: 'This is only the beginning.' With the weapon piece in hand, you leave the dungeon and venture onward"
           }
         },
         {
-          "position": 14,
-          "description": "Guthix Blesses You, roll again",
-          "action": {
-            "type": "rollAgain"
+          "id": 14,
+          "title": "Guthix's Blessing",
+          "description": "Roll again.",
+          "completion_requirements": "action",
+          "team_verification": "roll_again",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 15,
-          "description": "2 Rings from Dagannoth Kings per team",
-          "verification": {
-            "type": "per_team"
+          "id": 15,
+          "title": "Dagannoth Kings Slayer",
+          "description": "The team must obtain 2 rings from Dagannoth Kings.",
+          "completion_requirements": "The team must collect 2 rings from the Dagannoth Kings.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "While resting, you hear the captivating tune of a bard nearby. Something about his song draws you in, though a sly grin flashes across his face. You brush it off as he pulls out a glowing, magical lyre and begins to play. The enchanting melody compels you to follow him. The bard leads you to the entrance of the Waterbirth Island Dungeon, home to the Dagannoth Kings. 'These kings have taken everything from me. Leave one alive, so he may know the isolation I have endured,'",
+            "suffix": "After the battle, you return to the bard, leaving one Dagannoth King behind as instructed. Without a word, he pulls out his lyre and begins to play a haunting melody. The song tells the tale of his family, stolen from him by the Dagannoth Kings. As the notes fill the air, you feel the weight of his sorrow. His eyes remain closed as he plays, and when the final note fades, he quietly says, 'They took everything from me. Now, they will suffer alone, as I have.'He hands you a token of gratitude, his face a mix of grief and relief, before vanishing into the mist, his song lingering in the wind."
           }
         },
         {
-          "position": 16,
-          "description": "1 Tombs of Amascut purple per team",
-          "verification": {
-            "type": "per_team"
+          "id": 16,
+          "title": "Tombs of Amascut Raider",
+          "description": "The team must obtain 1 purple from the Tombs of Amascut.",
+          "completion_requirements": "Only one purple drop is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "Your party wanders through the scorching desert, parched and desperate to escape the relentless heat. Suddenly, a ghostlike figure materializes before you. 'I am Osmumten, guardian of the Tombs of Amascut,' he says, his voice echoing through the air. 'I offer you a chance at survival. If you can retrieve the purple chest from the tombs, I will grant safe passage for you and your party.'",
+            "suffix": "After retrieving the purple chest from the Tombs of Amascut, Osmumten reappears, his ghostly form shimmering in the desert heat. 'You have done well,' he intones, eyes fixed on the chest. With a wave of his hand, the oppressive heat around you vanishes, replaced by a cool breeze. 'As promised, you and your party are granted safe passage.' He lingers for a moment, as if considering something unsaid, then fades into the air, leaving behind only the faintest whisper of his presence"
           }
         },
         {
-          "position": 17,
-          "description": "1 Kalphite Queen head per team",
-          "verification": {
-            "type": "per_team"
+          "id": 17,
+          "title": "Kalphite Queen's Fall",
+          "description": "The team must obtain 1 Kalphite Queen head.",
+          "completion_requirements": "Only one head is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "Sitting at a pub, your ears catch the heated conversation of a sharp-dressed man and a woman with a foul stench.\n\n'You promised me a head!' she snaps, slamming her drink on the table. 'The only reason I agreed to buy a house from you was for that rare creature's head!'\n\nThe real estate agent begins to sweat, nervously glancing around the room. 'I swear I can get you one! I… I know some adventurers who can handle it.' His eyes dart around, and unfortunately, they land on you.\n\n'You! The queen slayer!' he exclaims, his voice cracking. 'This is the group I was telling you about!'\n\nWith a playful nudge, you reply, 'Only because you paid us up front.'",
+            "suffix": "After securing the creature's head, you return to the pub. The sharp-dressed man looks relieved, while the woman's eyes light up at the sight of the trophy. 'You really did it!' she exclaims. The real estate agent nervously hands over the keys to a house, his hands trembling. 'I knew you could do it!' he says with a forced smile. The woman takes the head and leaves, but not before giving you a nod of approval. The agent wipes his brow and mutters, 'Let's not make this a regular thing…' as he quickly exits the pub, leaving you with your reward but forgetting to mention where the house is located"
           }
         },
         {
-          "position": 18,
-          "description": "1 Wintertodt unique per member",
-          "verification": {
-            "type": "per_member"
+          "id": 18,
+          "title": "Wintertodt Champion",
+          "description": "Each member must obtain 1 unique from Wintertodt.",
+          "completion_requirements": "Each member must obtain a unique drop.",
+          "team_verification": "per_member",
+          "notes": {
+            "prefix": "Standing at the edge of the battlefield, you spot some mages bundled in fashionable yet functional outfits—designed to keep them warm in the unforgiving cold of the Wintertodt. The brazier flickers with an eerie glow, and you realize it's your turn to face the icy force. A voice echoes through the cold air: 'Channel the power of the bruma flames to weaken the Wintertodt.'",
+            "suffix": "With the Wintertodt subdued, the icy winds begin to calm. Your party gathers around the brazier, exhausted but triumphant. The warmth of the bruma flames lingers, and you spot a chest glinting in the frost. Opening it reveals not just survival tools, but sleek, fashionable winter gear—both functional and stylish. Wrapped in warmth and victory, your party readies to leave, knowing that these rewards will serve well in battles yet to come. As you head back, your new outfits attract admiring glances from those still preparing to face the Wintertodt"
           }
         },
         {
-          "position": 19,
-          "description": "1 shard piece from Chaos Fanatic per team",
-          "verification": {
-            "type": "per_team"
+          "id": 19,
+          "title": "Chaos Fanatic Slayer",
+          "description": "The team must obtain 1 shard piece from the Chaos Fanatic.",
+          "completion_requirements": "Only one shard is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "As you traverse the lava maze, you notice a faint glow emanating from a strange shard. As you reach for it, the Chaos Fanatic appears, his eyes wild with rage. 'That shard is mine!' he bellows, his voice echoing through the maze.",
+            "suffix": "You easily defeat the fanatical mage, but the shard remains a mystery. Its power is undeniable, and you can sense its potential. As you pocket the shard, you think to yourself, 'Why did the Chaos Fanatic want this so badly?' The shard's glow intensifies, and you feel a surge of energy. With a sense of foreboding, you continue your journey, knowing that the shard holds secrets yet to be revealed"
           }
         },
         {
-          "position": 20,
-          "description": "1 unique drop from The Nightmare per team",
-          "verification": {
-            "type": "per_team"
+          "id": 20,
+          "title": "Nightmare's Demise",
+          "description": "The team must obtain 1 unique from The Nightmare.",
+          "completion_requirements": "Only one unique is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "Your party takes a well-deserved rest at the local inn. As sleep overtakes you, it pulls you deeper and deeper, until you find yourself in a nightmare. The Nightmare, a creature of pure terror, looms before you, its grotesque form shifting in the darkness. Without warning, it strikes, forcing your party into a desperate battle for survival. The air is thick with fear, and every attack feels futile. What must be done to escape this nightmare and return to the waking world",
+            "suffix": "After a grueling battle, the Nightmare lets out a final, deafening shriek before dissolving into the shadows. In its place, a strange and powerful item materializes, glowing faintly in the eerie darkness. As you reach out and take it, the nightmare begins to fade, the world around you unraveling. You wake with a start in your inn room, drenched in sweat, but the unique item remains in your hands—a reminder that the Nightmare was more than just a dream"
           }
         },
         {
-          "position": 21,
-          "description": "50 Zalcano kill count per member",
-          "verification": {
-            "type": "per_member"
+          "id": 21,
+          "title": "Zalcano Slayer",
+          "description": "Each member must achieve 50 Zalcano kills.",
+          "completion_requirements": "Each member must achieve 50 kills individually.",
+          "team_verification": "per_member",
+          "notes": {
+            "prefix": "An Amlodd elf approaches your party with a look of urgency. 'Adventurers, we need your help,' she pleads. 'Zalcano, a cursed creature, has been imprisoned in the volcanic caverns below Tirannwn. Her curse is spreading, and if we don't stop her, it will consume her and spread across the land. We can't afford to wait any longer. You must stop her before it's too late",
+            "suffix": "With Zalcano defeated, the heavy curse begins to lift from the caverns. The Amlodd elf approaches, relief clear on her face. 'You've stopped the curse from spreading. Tirannwn is safe, for now,' she says, glancing at Zalcano’s remains. 'Thank you.' With a final nod, she turns and leaves, the caverns falling silent"
           }
         },
         {
-          "position": 22,
-          "description": "5 Obor kill count per member",
-          "verification": {
-            "type": "per_member"
+          "id": 22,
+          "title": "Obor Slayer",
+          "description": "Each member must achieve 5 Obor kills.",
+          "completion_requirements": "Each member must achieve 5 kills individually.",
+          "team_verification": "per_member",
+          "notes": {
+            "prefix": "A drunken giant stumbles into your party, nearly knocking you off your feet. 'Oi!' he slurs, barely able to stand. 'Watch where you're going!' You shove the giant away, only for him to suddenly pull out a massive, glowing club, crackling with magical energy. His muscles bulge as he towers over you, his drunken demeanor vanishing. 'You think you can take me?' he roars, swinging the club wildly. 'I'm Obor, the Hill Giant!'",
+            "suffix": "With a final, thunderous blow, Obor crashes to the ground, his massive club slipping from his grasp. The magical energy fades as the giant lies motionless. You carry on casually as fighting a magical giant is the least exciting thing you've done today."
           }
         },
         {
-          "position": 23,
-          "description": "1 King Black Dragon head per team",
-          "verification": {
-            "type": "per_team"
+          "id": 23,
+          "title": "King Black Dragon Slayer",
+          "description": "The team must obtain 1 King Black Dragon head.",
+          "completion_requirements": "Only one head is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "A renowned taxidermist approaches your party, her eyes gleaming with excitement. 'I’ve heard of your exploits,' she begins, 'and I have a request that only the boldest adventurers could take on. I seek the head of the King Black Dragon, one of the rarest and most dangerous trophies in existence. Few have ever faced the beast and lived to tell the tale. If you bring me its head, you’ll help create a masterpiece unlike any other",
+            "suffix": ""
           }
         },
         {
-          "position": 24,
-          "description": "1 Armadyl crossbow or Saradomin hilt per team",
-          "verification": {
-            "type": "per_team"
+          "id": 24,
+          "title": "God Wars Dungeon Champion",
+          "description": "The team must obtain 1 Armadyl crossbow or Saradomin hilt.",
+          "completion_requirements": "Only one crossbow or hilt is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 25,
-          "description": "1 Corporeal Beast unique per team",
-          "verification": {
-            "type": "per_team"
+          "id": 25,
+          "title": "Corporeal Beast Slayer",
+          "description": "The team must obtain 1 unique from the Corporeal Beast.",
+          "completion_requirements": "Only one unique is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 26,
-          "description": "10 Elite clues per member",
-          "verification": {
-            "type": "per_member"
+          "id": 26,
+          "title": "Elite Clue Hunter",
+          "description": "Each member must complete 10 Elite clues.",
+          "completion_requirements": "Each member must complete 10 Elite clues.",
+          "team_verification": "per_member",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 27,
-          "description": "10 Soul Wars crates per member",
-          "verification": {
-            "type": "per_member"
+          "id": 27,
+          "title": "Soul Wars Champion",
+          "description": "Each member must obtain 10 Soul Wars crates.",
+          "completion_requirements": "Each member must obtain 10 crates individually.",
+          "team_verification": "per_member",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 28,
-          "description": "1 Nex armor piece per team",
-          "verification": {
-            "type": "per_team"
+          "id": 28,
+          "title": "Nex Raider",
+          "description": "The team must obtain 1 Nex armor piece.",
+          "completion_requirements": "Only one armor piece is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 29,
-          "description": "1 Whip drop per team",
-          "verification": {
-            "type": "per_team"
+          "id": 29,
+          "title": "Abyssal Whip Hunter",
+          "description": "The team must obtain 1 whip drop.",
+          "completion_requirements": "Only one whip is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 30,
-          "description": "5 Theater of Blood kill count per member",
-          "verification": {
-            "type": "per_member"
+          "id": 30,
+          "title": "Theater of Blood Champion",
+          "description": "Each member must complete 5 Theater of Blood runs.",
+          "completion_requirements": "Each member must complete 5 runs.",
+          "team_verification": "per_member",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 31,
-          "description": "1 Sarachnis unique per team",
-          "verification": {
-            "type": "per_team"
+          "id": 31,
+          "title": "Sarachnis Slayer",
+          "description": "The team must obtain 1 unique from Sarachnis.",
+          "completion_requirements": "Only one unique is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 32,
-          "description": "Abyssal Demons teleport you back 3 spaces",
-          "action": {
-            "type": "move",
-            "spaces": -3
+          "id": 32,
+          "title": "Abyssal Demons Curse",
+          "description": "Abyssal Demons teleport you back 3 spaces.",
+          "completion_requirements": "action",
+          "team_verification": "move_back",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 33,
-          "description": "1 Ring from a Wilderness boss per team",
-          "verification": {
-            "type": "per_team"
+          "id": 33,
+          "title": "Wilderness Ring Slayer",
+          "description": "The team must obtain 1 ring from a Wilderness boss.",
+          "completion_requirements": "Only one ring is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 34,
-          "description": "1 shard from Crazy Archaeologist per team",
-          "verification": {
-            "type": "per_team"
+          "id": 34,
+          "title": "Crazy Archaeologist Slayer",
+          "description": "The team must obtain 1 shard from the Crazy Archaeologist.",
+          "completion_requirements": "Only one shard is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 35,
-          "description": "50 Beginner clues per member",
-          "verification": {
-            "type": "per_member"
+          "id": 35,
+          "title": "Beginner Clue Hunter",
+          "description": "Each member must complete 50 Beginner clues.",
+          "completion_requirements": "Each member must complete 50 Beginner clues.",
+          "team_verification": "per_member",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 36,
-          "description": "1 Chambers of Xeric purple per team",
-          "verification": {
-            "type": "per_team"
+          "id": 36,
+          "title": "Chambers of Xeric Raider",
+          "description": "The team must obtain 1 purple from the Chambers of Xeric.",
+          "completion_requirements": "Only one purple is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 37,
-          "description": "What if this one is a T-Bow? Go back 1 space",
-          "action": {
-            "type": "move",
-            "spaces": -1
+          "id": 37,
+          "title": "T-Bow Temptation",
+          "description": "What if this one is a T-Bow? Go back 1 space.",
+          "completion_requirements": "action",
+          "team_verification": "move_back",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 38,
-          "description": "1 unique from Vorkath per team",
-          "verification": {
-            "type": "per_team"
+          "id": 38,
+          "title": "Vorkath Slayer",
+          "description": "The team must obtain 1 unique from Vorkath.",
+          "completion_requirements": "Only one unique is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 39,
-          "description": "1 unique from Chaos Druids per team",
-          "verification": {
-            "type": "per_team"
+          "id": 39,
+          "title": "Chaos Druids Slayer",
+          "description": "The team must obtain 1 unique from Chaos Druids.",
+          "completion_requirements": "Only one unique is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 40,
-          "description": "1 unique from TzHaar monsters per member",
-          "verification": {
-            "type": "per_member"
+          "id": 40,
+          "title": "TzHaar Slayer",
+          "description": "Each member must obtain 1 unique from TzHaar monsters.",
+          "completion_requirements": "Each member must obtain a unique drop.",
+          "team_verification": "per_member",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 41,
-          "description": "Obtain 1 Champion scroll per team",
-          "verification": {
-            "type": "per_team"
+          "id": 41,
+          "title": "Champion Scroll Hunter",
+          "description": "The team must obtain 1 Champion scroll.",
+          "completion_requirements": "Only one scroll is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 42,
-          "description": "1 Venator shard from Muspah per team",
-          "verification": {
-            "type": "per_team"
+          "id": 42,
+          "title": "Muspah Slayer",
+          "description": "The team must obtain 1 Venator shard from Muspah.",
+          "completion_requirements": "Only one shard is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 43,
-          "description": "*Halo 3 Announcer* Slayer! Go forward 2 spaces",
-          "action": {
-            "type": "move",
-            "spaces": 2
+          "id": 43,
+          "title": "*Halo 3 Announcer* Slayer!",
+          "description": "Go forward 2 spaces.",
+          "completion_requirements": "action",
+          "team_verification": "move_forward",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 44,
-          "description": "Complete 20 Hard clues per member",
-          "verification": {
-            "type": "per_member"
+          "id": 44,
+          "title": "Hard Clue Hunter",
+          "description": "Each member must complete 20 Hard clues.",
+          "completion_requirements": "Each member must complete 20 Hard clues.",
+          "team_verification": "per_member",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 45,
-          "description": "1 Slayer boss unique per team",
-          "verification": {
-            "type": "per_team"
+          "id": 45,
+          "title": "Slayer Boss Hunter",
+          "description": "The team must obtain 1 unique from a Slayer boss.",
+          "completion_requirements": "Only one unique is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 46,
-          "description": "1 Kree'arra armor piece per team",
-          "verification": {
-            "type": "per_team"
+          "id": 46,
+          "title": "Kree'arra Armor Hunter",
+          "description": "The team must obtain 1 Kree'arra armor piece.",
+          "completion_requirements": "Only one armor piece is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 47,
-          "description": "Any ancient totem per team",
-          "verification": {
-            "type": "per_team"
+          "id": 47,
+          "title": "Ancient Totem Hunter",
+          "description": "The team must obtain any ancient totem.",
+          "completion_requirements": "Only one totem is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 48,
-          "description": "1 Blood shard drop per team",
-          "verification": {
-            "type": "per_team"
+          "id": 48,
+          "title": "Blood Shard Hunter",
+          "description": "The team must obtain 1 Blood shard.",
+          "completion_requirements": "Only one shard is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 49,
-          "description": "1 Dragon hat piece per team",
-          "verification": {
-            "type": "per_team"
+          "id": 49,
+          "title": "Dragon Hat Piece Hunter",
+          "description": "The team must obtain 1 Dragon hat piece.",
+          "completion_requirements": "Only one hat piece is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 50,
-          "description": "1 Elven signet from crystal impling per team",
-          "verification": {
-            "type": "per_team"
+          "id": 50,
+          "title": "Elven Signet Hunter",
+          "description": "The team must obtain 1 Elven signet from a crystal impling.",
+          "completion_requirements": "Only one signet is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 51,
-          "description": "100 Herbiboar kill count per team",
-          "verification": {
-            "type": "per_team"
+          "id": 51,
+          "title": "Herbiboar Hunter",
+          "description": "The team must achieve 100 Herbiboar kills.",
+          "completion_requirements": "The team must achieve 100 kills collectively.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 52,
-          "description": "1 Theater of Blood purple as a team",
-          "verification": {
-            "type": "per_team"
+          "id": 52,
+          "title": "Theater of Blood Champion",
+          "description": "The team must obtain 1 purple from the Theater of Blood.",
+          "completion_requirements": "Only one purple is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 53,
-          "description": "Full set of Naval outfit from Trouble Brewing per member",
-          "verification": {
-            "type": "per_member"
+          "id": 53,
+          "title": "Naval Outfit Collector",
+          "description": "Each member must obtain a full set of Naval outfit from Trouble Brewing.",
+          "completion_requirements": "Each member must obtain a full set individually.",
+          "team_verification": "per_member",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 54,
-          "description": "1 Enhanced teleport seed as a team",
-          "verification": {
-            "type": "per_team"
+          "id": 54,
+          "title": "Enhanced Teleport Seed Hunter",
+          "description": "The team must obtain 1 Enhanced teleport seed.",
+          "completion_requirements": "Only one seed is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 55,
-          "description": "1 Bandos armor piece as a team",
-          "verification": {
-            "type": "per_team"
+          "id": 55,
+          "title": "Bandos Armor Hunter",
+          "description": "The team must obtain 1 Bandos armor piece.",
+          "completion_requirements": "Only one armor piece is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 56,
-          "description": "1 Dark bow from Dark Beast as a team",
-          "verification": {
-            "type": "per_team"
+          "id": 56,
+          "title": "Dark Bow Hunter",
+          "description": "The team must obtain 1 Dark bow from Dark Beast.",
+          "completion_requirements": "Only one bow is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 57,
-          "description": "1 Zamorak hilt as a team",
-          "verification": {
-            "type": "per_team"
+          "id": 57,
+          "title": "Zamorak Hilt Hunter",
+          "description": "The team must obtain 1 Zamorak hilt.",
+          "completion_requirements": "Only one hilt is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 58,
-          "description": "1 Scorpia unique as a team",
-          "verification": {
-            "type": "per_team"
+          "id": 58,
+          "title": "Scorpia Slayer",
+          "description": "The team must obtain 1 unique from Scorpia.",
+          "completion_requirements": "Only one unique is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 59,
-          "description": "Successfully Escape JD's Playpen, roll again",
-          "action": {
-            "type": "rollAgain"
+          "id": 59,
+          "title": "JD's Playpen Escape",
+          "description": "Successfully Escape JD's Playpen, roll again.",
+          "completion_requirements": "action",
+          "team_verification": "roll_again",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 60,
-          "description": "1 Zenyte shard drop as a team",
-          "verification": {
-            "type": "per_team"
+          "id": 60,
+          "title": "Zenyte Shard Hunter",
+          "description": "The team must obtain 1 Zenyte shard.",
+          "completion_requirements": "Only one shard is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 61,
-          "description": "1 Chaos Elemental unique as a team",
-          "verification": {
-            "type": "per_team"
+          "id": 61,
+          "title": "Chaos Elemental Slayer",
+          "description": "The team must obtain 1 Chaos Elemental unique.",
+          "completion_requirements": "Only one unique is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         },
         {
-          "position": 62,
-          "description": "1 Crystal grail as a team",
-          "verification": {
-            "type": "per_team"
+          "id": 62,
+          "title": "Crystal Grail Hunter",
+          "description": "The team must obtain 1 Crystal grail.",
+          "completion_requirements": "Only one Crystal grail is required for the team.",
+          "team_verification": "per_team",
+          "notes": {
+            "prefix": "",
+            "suffix": ""
           }
         }
       ]
-    }
   }
 }
