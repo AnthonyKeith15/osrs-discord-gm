@@ -1,10 +1,11 @@
 {
-  "game": {
-    "name": "OSRS Themed Board Game",
-    "board": {
-      "size": 62,
+  "boards": [
+    {
+      "board_name": "Prifddinas Quest",
+      "type": "linear",
+      "size": "{{spaces.length}}", 
       "startText": "Your party ventures deep into Prifddinas, chasing the elusive crystal rabbit. The Crystal Grail is within sight... until a deadly ambush takes you by surprise. One by one, you fall. The grail slips from your grasp, and darkness surrounds you.",
-      "spaces": [
+       "spaces": [
         {
           "id": 1,
           "title": "Barrows Bounty",
@@ -134,7 +135,7 @@
           "team_verification": "per_team",
           "notes": {
             "prefix": "While resupplying at the Grand Exchange, the crowd murmurs as an adventurer crawls toward you, beaten and bruised. Someone whispers, 'That's Torvald the Unyielding', a legendary warrior who's faced countless foes. You overhear the crowds conversations 'He's been hunting the Wilderness bosses for weeks, what is he doing out there?' Torvald looks up at you and hands you a map with several locations marked on it. At the bottom of the map, it reads 'Dragon Pickaxe'",
-            "suffix": "After braving the dangers of the Wilderness and retrieving the Dragon Pickaxe, you return to the Grand Exchange. The crowd watches in awe as you present the pickaxe. Torvald is nowhere to be found, but the whispers around you grow louder. 'They actually did it…,' someone murmurs. As you pocket the Dragon Pickaxe, you can’t help but wonder if this was only part of a larger hunt that Torvald had started. Whatever lies ahead, the pickaxe is now yours"
+            "suffix": "After braving the dangers of the Wilderness and retrieving the Dragon Pickaxe, you return to the Grand Exchange. The crowd watches in awe as you present the pickaxe. Torvald is nowhere to be found, but the whispers around you grow louder. 'They actually did it…,' someone murmurs. As you pocket the Dragon Pickaxe, you can't help but wonder if this was only part of a larger hunt that Torvald had started. Whatever lies ahead, the pickaxe is now yours"
           }
         },
         {
@@ -233,7 +234,7 @@
           "team_verification": "per_member",
           "notes": {
             "prefix": "An Amlodd elf approaches your party with a look of urgency. 'Adventurers, we need your help,' she pleads. 'Zalcano, a cursed creature, has been imprisoned in the volcanic caverns below Tirannwn. Her curse is spreading, and if we don't stop her, it will consume her and spread across the land. We can't afford to wait any longer. You must stop her before it's too late",
-            "suffix": "With Zalcano defeated, the heavy curse begins to lift from the caverns. The Amlodd elf approaches, relief clear on her face. 'You've stopped the curse from spreading. Tirannwn is safe, for now,' she says, glancing at Zalcano’s remains. 'Thank you.' With a final nod, she turns and leaves, the caverns falling silent"
+            "suffix": "With Zalcano defeated, the heavy curse begins to lift from the caverns. The Amlodd elf approaches, relief clear on her face. 'You've stopped the curse from spreading. Tirannwn is safe, for now,' she says, glancing at Zalcano's remains. 'Thank you.' With a final nod, she turns and leaves, the caverns falling silent"
           }
         },
         {
@@ -243,7 +244,7 @@
           "completion_requirements": "Each member must achieve 5 kills individually.",
           "team_verification": "per_member",
           "notes": {
-            "prefix": "A drunken giant stumbles into your party, nearly knocking you off your feet. 'Oi!' he slurs, barely able to stand. 'Watch where you're going!' You shove the giant away, only for him to suddenly pull out a massive, glowing club, crackling with magical energy. His muscles bulge as he towers over you, his drunken demeanor vanishing. 'You think you can take me?' he roars, swinging the club wildly. 'I'm Obor, the Hill Giant!'",
+            "prefix": "A drunken giant stumbles into your party, nearly knocking you off your feet. 'Oi!' he slurs, barely able to stand. 'Watch where you're going!' You attempt to shove the giant away, only for him to suddenly pull out a massive, glowing club, crackling with magical energy. His muscles bulge as he towers over you, his drunken demeanor vanishing. 'You think you can take me?' he roars, swinging the club wildly. 'I'm Obor, the Hill Giant!'",
             "suffix": "With a final, thunderous blow, Obor crashes to the ground, his massive club slipping from his grasp. The magical energy fades as the giant lies motionless. You carry on casually as fighting a magical giant is the least exciting thing you've done today."
           }
         },
@@ -254,8 +255,8 @@
           "completion_requirements": "Only one head is required for the team.",
           "team_verification": "per_team",
           "notes": {
-            "prefix": "A renowned taxidermist approaches your party, her eyes gleaming with excitement. 'I’ve heard of your exploits,' she begins, 'and I have a request that only the boldest adventurers could take on. I seek the head of the King Black Dragon, one of the rarest and most dangerous trophies in existence. Few have ever faced the beast and lived to tell the tale. If you bring me its head, you’ll help create a masterpiece unlike any other",
-            "suffix": ""
+            "prefix": "A renowned taxidermist approaches your party, her eyes gleaming with excitement. 'I've heard of your exploits,' she begins, 'and I have a request that only the boldest adventurers could take on. I seek the head of the King Black Dragon, one of the rarest and most dangerous trophies in existence. Few have ever faced the beast and lived to tell the tale. If you bring me its head, you'll help create a masterpiece unlike any other",
+            "suffix": "The taxidermist's eyes widen with awe as she inspects the rare trophy. 'You've actually done it,' she whispers, clearly impressed. 'This will be the crown jewel of my collection, a masterpiece like no other.' She steps back, admiring the dragon's head. 'Thanks to you, this trophy will stand as a testament to your bravery—and my finest work.'"
           }
         },
         {
@@ -265,8 +266,8 @@
           "completion_requirements": "Only one crossbow or hilt is required for the team.",
           "team_verification": "per_team",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "As you trek through the Kanderin desert, the heat suddenly fades, and Jhallan, the Mahjarrat from your nightmares, appears before you. 'Your will is mine now,' he says, before the world shifts around you, plunging you into the frozen God Wars Dungeon. 'Kill Zilyana. Bring me the Armadyl crossbow or Saradomin hilt. There is no escape.' With that, Jhallan vanishes, leaving you standing in the icy dungeon with no choice but to obey",
+            "suffix": "With Zilyana defeated, the weight of Jhallan's influence presses harder. The moment you grasp the Armadyl crossbow or Saradomin hilt, the world warps around you. In an instant, you're back in the desert, where Jhallan waits. 'You've done well,' he says, eyes gleaming. Without another word, the artifact vanishes from your hands, and with it, so does Jhallan, leaving only a sense of uneasy relief in the scorching sands."
           }
         },
         {
@@ -276,8 +277,8 @@
           "completion_requirements": "Only one unique is required for the team.",
           "team_verification": "per_team",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "As your party passes through Lumbridge, you notice Bob the armor repairman standing outside his shop, inspecting an unusual shield. ‘Strangest thing,’ he mutters as you approach. ‘Some fella gave me this spirit shield as payment for some work I did. Thought it was a good deal, until strange things started happening around it.’ He points to your Games Necklace, which begins to glow brightly as you draw near. ‘See? That’s been happening ever since I got the shield. Might be connected. If you’re brave enough, you might want to check it out... it’s giving me the creeps.’",
+            "suffix": "With the Corporeal Beast defeated, the shield in your hands feels lighter, its strange energy dissipated. As you return to Lumbridge, Bob is waiting. ‘So, you did it then,’ he says, eyes wide as you hand him the now-calm spirit shield. ‘I’ve never seen anything like that... guess I owe you for saving me from whatever that was. Keep the shield—seems it belongs with you now.’ He nods gratefully, turning back to his work as you feel the weight of your victory settle in."
           }
         },
         {
@@ -287,8 +288,8 @@
           "completion_requirements": "Each member must complete 10 Elite clues.",
           "team_verification": "per_member",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "As you round a corner in Hosidius, you crash into a man, sending his papers flying. ‘Watch it!’ he grumbles, picking them up. ‘I’m Watson, and you’ve just made a mess of my work. Now, you owe me. I need 10 elite clues to complete a major discovery. Go find them, and we’ll be square.’ He glares at you before heading off, leaving you with no choice but to track down the clues.",
+            "suffix": "After gathering the 10 elite clues, you return to find Watson—dressed head to toe in a bright chicken outfit, clucking nervously when he spots you. ‘Er... well, this is... not how I planned this,’ he mutters, adjusting his feathery costume. ‘Tell you what—you keep the loot, and we pretend this never happened, deal?’ He flaps his wings awkwardly and scurries off, leaving you with a pile of treasure... and a very bizarre secret"
           }
         },
         {
@@ -298,8 +299,8 @@
           "completion_requirements": "Each member must obtain 10 crates individually.",
           "team_verification": "per_member",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "A long time ago, in a minigame far, far away... mighty battles raged in a mysterious realm known as Soul Wars. Heroes clashed, vying for control of the soul obelisks, and fragments of great power were scattered across the battlefield. Now, whispers of these legendary fragments have resurfaced. If you can obtain 10 Soul Wars fragments, perhaps the ancient power of the minigame can be yours to harness once again.",
+            "suffix": "With the 10 Soul Wars crates in hand, a hologram flickers to life. ‘Congrats!’ it says, waving a fake lightsaber. ‘No ancient powers, just crates of goodies. May the loot be with you!’ The hologram winks before vanishing, leaving you with your crates and a grin"
           }
         },
         {
@@ -309,8 +310,8 @@
           "completion_requirements": "Only one armor piece is required for the team.",
           "team_verification": "per_team",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "After countless battles, your party needs an upgrade. Someone recalls: ‘Nex, one of Zaros’ most powerful followers, sealed beneath the God Wars Dungeon. Her armor holds immense power, if we’re brave enough to claim it.’",
+            "suffix": "With Nex defeated, you pry the armor from her fallen form. The power radiating from it is undeniable. As you hold the piece, the weight of your past battles fades. ‘This will do nicely,’ someone mutters, as the party gathers their hard-earned upgrade"
           }
         },
         {
@@ -320,8 +321,8 @@
           "completion_requirements": "Only one whip is required for the team.",
           "team_verification": "per_team",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "While traveling deep in the Abyss, your party is attacked by a swarm of Abyssal Demons. Chaos erupts, and survival becomes your only focus.",
+            "suffix": "After fending off the last of the Abyssal Demons, you spot a whip among the remains. Its dark energy pulses in your hand—an undeniable reward for surviving the onslaught"
           }
         },
         {
@@ -331,8 +332,8 @@
           "completion_requirements": "Each member must complete 5 runs.",
           "team_verification": "per_member",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "Abigaila’s crystal ball flickers to life, revealing the twisted battlefield where Verzik reigns. The fallen lie scattered, but instead of dread, your heart races. The thought of battle—the thrill of clashing with a foe so powerful—ignites a fire inside you. Your pulse quickens, muscles tense, and every fiber of your being craves the fight. The idea of slaying the Spider Queen, of being the one to end her reign, fills you with an intoxicating rush. You can already feel the weight of your weapon in hand, ready for blood.",
+            "suffix": "Abigaila’s crystal ball flickers, showing you standing over Verzik’s broken body. But instead of stopping, you drive your weapon into her again—blood still pumping, the rush not yet faded. Abigaila’s eyes widen as she watches, her breath catching. Even with Verzik slain, your bloodlust hasn’t subsided, and the sight of you continuing to strike fills her with quiet fear. The thrill of the kill still burns inside you, as Abigaila looks on, worry etched across her face."
           }
         },
         {
@@ -342,8 +343,8 @@
           "completion_requirements": "Only one unique is required for the team.",
           "team_verification": "per_team",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "As your party ventures deeper into the Forthos Dungeon, one of your companions mutters, ‘I hate spiders,’ flicking away small webs clinging to their armor. But the deeper you go, the thicker the webs become—The skittering sounds grow louder, and your companion nervously adds, ‘It’s just spiders, right?’ But as you step into the next chamber, the looming shadow ahead tells a different story",
+            "suffix": "As the dust settles, your companion lets out a shaky breath. ‘That was... too big to be a spider,’ they mutter, wiping off the last of the webs. Just then, a small, harmless spider drops onto their shoulder. In a panic, they scream and, without thinking, unleash a Dragon Claw attack, obliterating the tiny creature. The rest of the party stares, holding back laughter, but no one dares say a word."
           }
         },
         {
@@ -353,7 +354,7 @@
           "completion_requirements": "action",
           "team_verification": "move_back",
           "notes": {
-            "prefix": "",
+            "prefix": "In the middle of a rowdy pub, the Mage of Zamorak, a bit tipsy, stands up and declares, ‘I can teleport anyone anywhere, no problem!’ He waves his staff, showing off, but just as you’re moving past, you accidentally step into the spell’s path. In an instant, the room disappears, and you find yourself surrounded by Abyssal Demons in a dark, unfamiliar cavern. ‘This... isn’t the right place,’ someone mutters, as the demons close in and the mage’s spell misfires badly",
             "suffix": ""
           }
         },
@@ -364,8 +365,8 @@
           "completion_requirements": "Only one ring is required for the team.",
           "team_verification": "per_team",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "A customer walks into a jeweller, tossing a wilderness ring onto the counter. The clerk inspects it, leaning in. ‘I'm Glum and this is my jewellery store. I work here with my old man and my son, Big Hoss. Everything here has a story, and a price. One thing I've learned after 21 years- you never know what’ll come through those doors,’ he mutters. After a moment, he straightens up. 'I'll be honest, I don't know much about these things, but I know an expert who might.' He hands you a map with some locations marked on it and asks you to go grab one and make sure this ring in front of him is not counterfeit.",
+            "suffix": "After comparing the rings, you nod confidently. ‘It’s legit—worth about 3 million GP.’ The customer’s eyes widen. ‘Alright,’ Grum says, ‘I’ll offer you... 500k.’ The customer blinks in disbelief, but Grum just shrugs. ‘Hey, I’ve got to make a profit.’"
           }
         },
         {
@@ -375,8 +376,8 @@
           "completion_requirements": "Only one shard is required for the team.",
           "team_verification": "per_team",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "As you approach the ruins of The Forgotten Cemetery, a chill runs down your spine. Suddenly, Bellock, renowned archaeologist, leaps from the shadows, wild-eyed and frantic. ‘You don’t belong here!’ he shouts, hurling explosive books in your direction. ‘The spirits are restless!’ With each detonation, his madness becomes clear as he attacks with reckless abandon",
+            "suffix": "After the dust settles, you notice one party member standing unharmed amidst the chaos. ‘How did you take no damage?’ you ask, bewildered. He shrugs, a hint of pride in his voice. ‘Those books can’t hurt me cause I can’t read.’ As he does, he reveals the shard you need, tucked safely in his pocket."
           }
         },
         {
@@ -386,8 +387,8 @@
           "completion_requirements": "Each member must complete 50 Beginner clues.",
           "team_verification": "per_member",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "While walking through the bustling streets of Ardougne, you spot Elena standing by a fountain, looking a bit overwhelmed. ‘Hey, everyone!’ she calls out, her voice tinged with worry. ‘I could really use some help with these beginner clues.’ The rest of the party perks up at the chance to impress her. ‘Of course, we’ll help you,’ one member replies, eager to step in. You all exchange knowing glances, motivated by the opportunity to win Elena’s heart as you prepare to tackle the clues. Only one of you can win her heart, so who will finish these clues first?",
+            "suffix": "After a long day of tackling clues, you and the party return to Elena, feeling accomplished. One member gathers the courage to ask her out, but before they can speak, a towering figure approaches—Elena's boyfriend, a mighty warrior named I Sqirk A Lot. He strides over, a confident grin on his face, completely unaware of the moment you were about to have. The group exchanges awkward glances, realizing the date was never in the cards."
           }
         },
         {
@@ -397,8 +398,8 @@
           "completion_requirements": "Only one purple is required for the team.",
           "team_verification": "per_team",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "As the party stumbles through the dimly lit Arceuus Library, one member flips through a dusty tome, eyes gleaming with greed. ‘Look at this!’ they exclaim. ‘It says there’s a purple chest hidden in the Chambers of Xeric that no one has found yet!’ The thought of untold riches stirs a palpable excitement among the group, and you all exchange eager glances, ready to chase after the treasure that could be yours",
+            "suffix": "With the purple chest opened, the party erupts into a heated argument over the treasures inside. ‘I found it first!’ one shouts. ‘Iron men don’t get to keep anything!’ another complains. Suddenly, a hidden trap activates, darts flying and stones dropping from above. ‘Fine! We’ll share!’ someone yells as you all scramble to avoid the chaos"
           }
         },
         {
@@ -408,7 +409,7 @@
           "completion_requirements": "action",
           "team_verification": "move_back",
           "notes": {
-            "prefix": "",
+            "prefix": "As you step forward, the Spirit of Xeric materializes, an aura of power surrounding him. ‘Adventurers,’ he whispers, ‘what if I told you there are treasures yet undiscovered? Imagine the riches!’ His words tempt you with greed, but suddenly, the ground shifts beneath you, sending you backward as his laughter echoes.",
             "suffix": ""
           }
         },
@@ -419,8 +420,8 @@
           "completion_requirements": "Only one unique is required for the team.",
           "team_verification": "per_team",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "As you stroll along the docks, you spot Torfinn admiring his boat. He turns to you with a grin. ‘I need a cool decoration for my ship! A visage or a jar of decay would do nicely. What do you say? Can you help me find one?’ His enthusiasm is infectious as he gestures toward the sea, eager for an upgrade that’ll make his vessel stand out.",
+            "suffix": "After defeating Vorkath, you return to Torfinn with the new decoration. His eyes widen with excitement. ‘This is incredible!’ he exclaims, eagerly attaching it to his boat. ‘Now my ship will truly stand out on the water!’ You smile, knowing that your victory has given him the perfect touch for his vessel"
           }
         },
         {
@@ -688,5 +689,66 @@
           }
         }
       ]
-  }
+    },
+    {
+      "board_name": "Board 2",
+      "type": "linear",
+      "size": "{{spaces.length}}", 
+      "startText": "This is the start of the second board",
+       "spaces": [
+        {
+          "id": 1,
+          "title": "Barrows Bounty",
+          "description": "Each member must acquire 1 Barrows unique.",
+          "completion_requirements": "Each member must obtain a unique drop.",
+          "team_verification": "per_member",
+          "notes": {
+            "prefix": "As the darkness closes in, the Mysterious Stranger appears. He silently drags your broken party from the battlefield, tending to your wounds in secret. As you awaken, he gives you an ultimatum: 'You owe me now. Each of you will retrieve a unique Barrows piece for me, or your debt remains unpaid.",
+            "suffix": "The Mysterious Stranger takes the Barrows pieces with a nod. 'Your debt is paid, but there's more ahead.' Without another word, he vanishes, leaving you to decide your next steps"
+          }
+        },
+        {
+          "id": 2,
+          "title": "Vetion Slaughter",
+          "description": "Each member must eliminate 25 Vetion bosses.",
+          "completion_requirements": "Each member must achieve 25 kills individually.",
+          "team_verification": "per_member",
+          "notes": {
+            "prefix": "Your party stumbles into a pub, you find a bounty poster for the fearsome Vet'ion. The tavernkeep eyes you warily, 'You're not the first to try and claim that bounty. But if you're foolish enough to try, I won't stop you.'",
+            "suffix": "Word of your victory spreads quickly. The tavernkeep nods in respect as you return. 'Didn't think I'd see the day someone bested Vet'ion. You've earned your reward, but beware—there are always greater dangers lurking beyond the next corner"
+          }
+        }
+       ]
+    },
+    {
+      "board_name": "Bingo Board",
+      "type": "bingo",
+      "size": "{{spaces.length}}", 
+      "startText": "This is the start of the first bingo board",
+       "spaces": [
+        {
+          "id": 1,
+          "title": "Barrows Bounty",
+          "description": "Each member must acquire 1 Barrows unique.",
+          "completion_requirements": "Each member must obtain a unique drop.",
+          "team_verification": "per_member",
+          "notes": {
+            "prefix": "As the darkness closes in, the Mysterious Stranger appears. He silently drags your broken party from the battlefield, tending to your wounds in secret. As you awaken, he gives you an ultimatum: 'You owe me now. Each of you will retrieve a unique Barrows piece for me, or your debt remains unpaid.",
+            "suffix": "The Mysterious Stranger takes the Barrows pieces with a nod. 'Your debt is paid, but there's more ahead.' Without another word, he vanishes, leaving you to decide your next steps"
+          }
+        },
+        {
+          "id": 2,
+          "title": "Vetion Slaughter",
+          "description": "Each member must eliminate 25 Vetion bosses.",
+          "completion_requirements": "Each member must achieve 25 kills individually.",
+          "team_verification": "per_member",
+          "notes": {
+            "prefix": "Your party stumbles into a pub, you find a bounty poster for the fearsome Vet'ion. The tavernkeep eyes you warily, 'You're not the first to try and claim that bounty. But if you're foolish enough to try, I won't stop you.'",
+            "suffix": "Word of your victory spreads quickly. The tavernkeep nods in respect as you return. 'Didn't think I'd see the day someone bested Vet'ion. You've earned your reward, but beware—there are always greater dangers lurking beyond the next corner"
+          }
+        }
+       ]
+    }
+  ]
 }
