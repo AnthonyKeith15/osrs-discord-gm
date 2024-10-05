@@ -112,7 +112,7 @@
           "completion_requirements": "action",
           "team_verification": "move_back",
           "notes": {
-            "prefix": "",
+            "prefix": "As you press forward, a deep, ancient force grips the air. The Almighty Olm, master of the Chambers of Xeric, summons you unexpectedly. The pull is irresistible, and you are drawn back, stepping into the chambers to face whatever trials await",
             "suffix": ""
           }
         },
@@ -156,7 +156,7 @@
           "completion_requirements": "action",
           "team_verification": "roll_again",
           "notes": {
-            "prefix": "",
+            "prefix": "As you move forward, a peaceful energy washes over the party. Guthix, the god of balance, has noticed your efforts and grants you his blessing. With renewed strength and clarity, you feel the world align in your favor. Guthix's blessing urges you onward",
             "suffix": ""
           }
         },
@@ -431,8 +431,8 @@
           "completion_requirements": "Only one unique is required for the team.",
           "team_verification": "per_team",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "The Wilderness grows colder as you near the cursed ruins. The Elder Chaos druids chant in the distance, their powerful magic ready to strike. Your mission is clear—claim a unique from their twisted ranks, but beware their relentless teleports.",
+            "suffix": "The chaos fades as the last druid falls, their dark magic unraveling around you. Among the debris, your hand grasps a relic of power—rare, and well earned. The Wilderness still whispers its dangers, but for now, you stand triumphant"
           }
         },
         {
@@ -442,8 +442,8 @@
           "completion_requirements": "Each member must obtain a unique drop.",
           "team_verification": "per_member",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "The heat intensifies as you descend into the heart of the TzHaar city. Lava flows nearby, and the sound of clashing stone echoes in the chambers ahead. Each of you must prove your worth by claiming a unique from these fierce warriors",
+            "suffix": "The battle cools as the last TzHaar falls. In your hands, each of you grips a unique artifact, still warm from the lava flows. The air is thick with heat, but your mission here is complete"
           }
         },
         {
@@ -453,8 +453,8 @@
           "completion_requirements": "Only one scroll is required for the team.",
           "team_verification": "per_team",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "As you enter the Champions' Guild, the scene is chaotic. The Guild Master’s face is stern as he recounts what has happened: a ragtag group of enemies—an imp, goblin, skeleton, zombie, and giant—has raided the guild, stealing a powerful scroll. Their alliance defies nature. The Guild Master’s voice is steady but firm 'Retrieve the scroll, by any means necessary.'",
+            "suffix": "The stolen scroll is finally back in your hands, its power barely contained. The Guild Master silently receives it, his eyes lingering on the worn edges. The raid’s chaos has passed, but the implications of this alliance remain"
           }
         },
         {
@@ -464,18 +464,18 @@
           "completion_requirements": "Only one shard is required for the team.",
           "team_verification": "per_team",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "The frozen winds bite at your skin as you descend into the Ghorrock Dungeon, the icy caverns stretching beneath the ancient fortress. Somewhere deep within, the Venator shard lies hidden, guarded by the relentless Muspah. The air grows colder, each step leading you closer to the heart of the dungeon—and the shard you seek",
+            "suffix": "Amid the icy remains of the Muspah, the Venator shard pulses with ancient power. The dungeon is silent now, save for the faint hum of the shard in your grasp. The cold of Ghorrock lingers, but the shard’s energy will be key to what lies ahead"
           }
         },
         {
           "id": 43,
-          "title": "*Halo 3 Announcer* Slayer!",
+          "title": "Slayer!",
           "description": "Go forward 2 spaces.",
           "completion_requirements": "action",
           "team_verification": "move_forward",
           "notes": {
-            "prefix": "",
+            "prefix": "Something primal stirs within one of you—a sudden surge of bloodlust, raw and uncontrollable. Without a word, they move ahead, drawn by an unseen force, their instincts pulling them closer to the impending hunt",
             "suffix": ""
           }
         },
@@ -486,8 +486,8 @@
           "completion_requirements": "Each member must complete 20 Hard clues.",
           "team_verification": "per_member",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "Olaf stands beside Falo the Bard, both with a mischievous glint in their eyes. 'We’ve got a challenge for you,' Olaf grins. 'Twenty hard clues each, no more, no less,' Falo adds, his lute strumming softly in the background. The task seems straightforward, but the weight of their request is anything but",
+            "suffix": "As the final clue is uncovered, Falo’s song grows stronger, its melody flowing through the group like a breath of fresh air. With each note, the weariness of the journey seems to lift, and a renewed sense of purpose fills your hearts. 'You’re nearly there,' Olaf says with a grin"
           }
         },
         {
@@ -497,8 +497,8 @@
           "completion_requirements": "Only one unique is required for the team.",
           "team_verification": "per_team",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "As you reach the summit of Mount Karuulm, the volcanic heat is almost unbearable. There, standing at the edge, Konar awaits you. Her gaze is distant, her expression unreadable. 'A unique from a Slayer boss is what I need,' she says, her voice steady but with an undercurrent you can’t quite place. The air around her seems charged with something… different.",
+            "suffix": "You return with the slayer unique in hand. Konar’s eyes linger on it for a moment, her lips curving into a faint, almost imperceptible smile. Without another word, she takes the item, and pushes the party forward. 'The journey is far from over,' she says, her voice echoing in the volcanic winds"
           }
         },
         {
@@ -508,8 +508,8 @@
           "completion_requirements": "Only one armor piece is required for the team.",
           "team_verification": "per_team",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "As you trek through the cliffs of Trollheim, a group of hulking trolls blocks your path. Their leader steps forward, eyeing your party with suspicion. 'You want passage? Bring us armor from big bird—Kree'arra,' he grunts. 'Good armor. Strong armor. You bring it, we talk.'",
+            "suffix": "After the dust settles from the battle with Kree'arra, the armor piece lies at your feet. Just as the group begins to consider delivering it to the trolls, one party member speaks up, shaking their head. 'Why bother with the trolls? I know someone who’d pay millions for this.' Before anyone can object, they cast a teleport spell, whisking everyone away without another word"
           }
         },
         {
@@ -519,8 +519,8 @@
           "completion_requirements": "Only one totem is required for the team.",
           "team_verification": "per_team",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "The shadows of the Revenant Caves stretch long before you, the air thick with a sense of dread. Whispers of lost souls echo from the walls as you enter. Somewhere deep within, an ancient totem lies hidden, guarded by vengeful revenants. Retrieving it will not be easy, but its power is said to be immense",
+            "suffix": "The ancient totem pulses with a dark energy as you pull it from the clutches of the revenants. The caves seem to grow quieter, as if the spirits themselves are watching your every move. With the totem in hand, the exit is close, but the danger of the caves is never far behind"
           }
         },
         {
@@ -530,19 +530,19 @@
           "completion_requirements": "Only one shard is required for the team.",
           "team_verification": "per_team",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "The Vyrewatch Sentinels loom over you as they force the party into the dark, oppressive mines. A quiet plan forms—either slip away unnoticed, or take matters into your own hands and end them by force. One thing is certain: you’re not leaving without payment",
+            "suffix": "With the blood shard in hand, the party makes a quick decision. You scale the rough stone wall, hearts pounding as you slip over the top. In the shadowy distance, Slepe offers refuge. Sneaking through the dark streets, you find a quiet place to hide. The Vyrewatch Sentinels may be searching, but for now, you're safe in the city’s shadows"
           }
         },
         {
           "id": 49,
           "title": "Dragon Hat Piece Hunter",
-          "description": "The team must obtain 1 Dragon hat piece.",
+          "description": "The team must obtain 1 Dagon'hai piece.",
           "completion_requirements": "Only one hat piece is required for the team.",
           "team_verification": "per_team",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "Deep within the pirate’s hideout, tucked away behind barrels and crates, you stumble upon a massive chest, its iron locks weathered but unyielding. The air smells of salt and old wood, and the faint sound of waves echoes through the hideout. Whatever lies inside must be valuable, but first, you’ll need to figure out how to open it",
+            "suffix": "The lock finally gives way with a loud creak, revealing the contents of the chest. Treasures and relics glimmer in the dim light, proof that the pirates were guarding more than just their hideout. The chest’s secrets are now yours to claim"
           }
         },
         {
@@ -552,8 +552,8 @@
           "completion_requirements": "Only one signet is required for the team.",
           "team_verification": "per_team",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "Amid the shimmering trees of Prifddinas, the elusive crystal implings dart through the air, their translucent wings catching the light. Somewhere within their delicate forms lies a rare treasure—the elven signet. Capturing one of these elusive creatures will take precision and patience, but the reward is well worth the effort",
+            "suffix": "With a swift motion, the crystal impling is caught, and in your hands, you now hold the elven signet. Its soft glow hums with ancient elven magic, a symbol of the rare and precious prize you've claimed from these elusive beings"
           }
         },
         {
@@ -563,8 +563,8 @@
           "completion_requirements": "The team must achieve 100 kills collectively.",
           "team_verification": "per_team",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "The wilds of Fossil Island hold many secrets, and today, you’re on the trail of the elusive herbiboar. Faint, scattered footsteps mark its path through the island’s dense foliage, leading deeper into the jungle. With each step, you draw closer to the burrow where this rare creature hides. Tracking it requires patience, but the herbiboar’s prized herbs make the pursuit worthwhile.",
+            "suffix": "As the trail ends, the herbiboar emerges from its burrow, and with quick reflexes, you manage to capture it. The fragrant herbs clutched in its claws are your reward—a bounty from the heart of Fossil Island"
           }
         },
         {
@@ -574,8 +574,8 @@
           "completion_requirements": "Only one purple is required for the team.",
           "team_verification": "per_team",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "Weary from a long journey, the party stands before the foreboding entrance of the Theater of Blood. The lure of a purple drop—the treasure that could turn their fortunes—drives them onward. Coins are running low, and the only way out of this struggle is to face the dangers within. 'We’ll run this raid until we get rich,' someone mutters, and with that, you all step inside, ready to face whatever awaits",
+            "suffix": "A flash of purple catches your eye as the reward chest opens. Inside lies the treasure you’ve been waiting for, gleaming with promise. The riches will bring relief after the grueling journey, but deep down, you know this place always pulls adventurers back"
           }
         },
         {
@@ -585,8 +585,8 @@
           "completion_requirements": "Each member must obtain a full set individually.",
           "team_verification": "per_member",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "The party huddles together, eyeing a bustling pirate port in the distance. You’ve heard rumors that a naval outfit will be your ticket to blending in—perfect for the disguise you need to pull off your next move.",
+            "suffix": "With the naval outfit in hand, you slip into the attire, its worn fabric fitting perfectly for the role you’re about to play. The disguise is complete, and as you look at each other, you know it’s time to put it to use and step into the pirate’s world unnoticed"
           }
         },
         {
@@ -596,8 +596,8 @@
           "completion_requirements": "Only one seed is required for the team.",
           "team_verification": "per_team",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "The shimmering city of the elves lies before you, its crystalline walls gleaming in the light. Somewhere within, an enhanced crystal teleport seed awaits, but it won’t be easy to obtain. You can either slip through the shadows, picking pockets and avoiding detection, or take a more direct approach and challenge the elven guards. The choice is yours, but the seed must be yours by any means necessary",
+            "suffix": "The enhanced crystal teleport seed hums softly in your hand, its magic offering a direct link back to Prifddinas. With this in your possession, travel across the elven lands will be far easier."
           }
         },
         {
@@ -607,8 +607,8 @@
           "completion_requirements": "Only one armor piece is required for the team.",
           "team_verification": "per_team",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "The heavy air of Bandos' stronghold presses down on the party as you advance. One of you moves with a quiet, deadly purpose. Their mission has always been clear—to end the ourg race, the ones who took everything from them. General Graardor is the last. No words are spoken, but you all know this is their final act of vengeance",
+            "suffix": "The ground shakes as General Graardor collapses, the last of the ourg. The silence that follows is thick with the finality of the moment. Your companion, who has hunted every last one of them, stands still, their task complete. The Bandos armor glints in the aftermath, but the true victory is etched in the quiet resolve of a bloodline brought to extinction"
           }
         },
         {
@@ -618,8 +618,8 @@
           "completion_requirements": "Only one bow is required for the team.",
           "team_verification": "per_team",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "In the shadowed depths of Prifddinas, the party ventures into the forgotten caverns where dark beasts lurk. Their eyes glow faintly in the dim light, and the air hums with the energy of these powerful creatures. Hidden among them is a prized weapon—the dark bow.",
+            "suffix": "The final dark beast falls, its shadowy form dissolving into the darkness. Among its remains lies the dark bow, a weapon of immense power. As you lift it, the faint echoes of the dark beasts still seem to reverberate through the caverns, but the bow is now yours to wield."
           }
         },
         {
@@ -629,8 +629,8 @@
           "completion_requirements": "Only one hilt is required for the team.",
           "team_verification": "per_team",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "As you approach the lair of K'ril Tsutsaroth, the presence of the gods feels heavy in the air. Their whispers seem to surround you, each trying to sway your decision, urging you to act in their favor. But despite their influence, you press forward by your own will. K'ril Tsutsaroth guards the Zamorak hilt, a relic of great power, and to claim it, you must confront him on your own terms",
+            "suffix": "K'ril Tsutsaroth collapses, his roar fading into the distance. The gods’ whispers grow louder, seeking to claim credit for your victory, but you know the truth—you acted of your own accord. Among the ashes, the Zamorak hilt lies glowing with dark energy, a testament to your strength and resolve, free from the gods’ influence."
           }
         },
         {
@@ -640,8 +640,8 @@
           "completion_requirements": "Only one unique is required for the team.",
           "team_verification": "per_team",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "As you navigate the treacherous terrain of the Wilderness, a clever deception leads the party astray. Before you realize it, the ground gives way beneath your feet, and you find yourselves in the heart of the scorpion pit. At its center, Scorpia waits, her pincers snapping with anticipation. There’s no escape now—the only way out is through the venomous queen of this pit.",
+            "suffix": "Scorpia lies defeated, her venomous reign at an end. The pit feels quieter, though the sting of betrayal still lingers from how you were tricked into this lair. As you climb out, you leave behind the remains of the queen, but the memory of being outwitted stays fresh in your minds."
           }
         },
         {
@@ -651,7 +651,7 @@
           "completion_requirements": "action",
           "team_verification": "roll_again",
           "notes": {
-            "prefix": "",
+            "prefix": "You find yourself trapped inside JD’s Playpen, a place full of tricks and traps. It feels like a twisted game, but you waste no time. With quick thinking and faster reflexes, you manage to slip past the final obstacle. You've escaped!",
             "suffix": ""
           }
         },
@@ -662,8 +662,8 @@
           "completion_requirements": "Only one shard is required for the team.",
           "team_verification": "per_team",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "The Crash Site Cavern looms ahead, filled with the sounds of tortured and demonic gorillas lurking in the shadows. Their strength is legendary, but within their grasp lies a rare prize—a zenyte shard. The journey here was not easy, and the battle ahead will test your resolve, but the power of the shard makes it worth the risk",
+            "suffix": "Among the remains of the fallen gorillas, the zenyte shard glints in the dim light, a rare and precious reward. The cavern feels quieter now, though the weight of the battles fought here is undeniable. With the shard in hand, you leave the Crash Site Cavern behind, the victory well earned."
           }
         },
         {
@@ -673,8 +673,8 @@
           "completion_requirements": "Only one unique is required for the team.",
           "team_verification": "per_team",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "The Wilderness stretches out before you, its dangers ever-present. In the distance, a swirling dark cloud appears—a chaotic mass with six writhing tentacles. This is the Chaos Elemental, a being of pure unpredictability and destruction. Its very presence distorts the world around it, and stepping closer means embracing the chaos. But the rewards for facing this beast are said to be great, if you can survive its onslaught.",
+            "suffix": "The Chaos Elemental dissolves into the air, leaving nothing but a faint crackle of energy in its wake. The Wilderness feels no less dangerous, but the sense of victory is palpable. The battle was unpredictable, wild, but you’ve come out the other side with the spoils of your encounter and a tale to tell."
           }
         },
         {
@@ -684,8 +684,8 @@
           "completion_requirements": "Only one Crystal grail is required for the team.",
           "team_verification": "per_team",
           "notes": {
-            "prefix": "",
-            "suffix": ""
+            "prefix": "Your party ventures deep into Prifddinas, chasing the elusive crystal rabbit, the memory of its ambush still fresh in your minds. This time, you’re ready—eager for revenge. The Crystal Grail is near, its faint glow drawing you forward. The final battle is upon you, and as you close in, the anticipation builds. This time, you will not be taken by surprise.",
+            "suffix": "The crystal rabbit falls, and the grail shines brighter than ever. As you lift the Crystal Grail in victory, a wave of relief washes over the party. The journey has been long and filled with trials, but now, with the grail in hand, your quest is complete"
           }
         }
       ]
