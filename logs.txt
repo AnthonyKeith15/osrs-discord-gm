@@ -339,3 +339,25 @@
 [2024-10-18T03:10:31.043Z] User: vngchrome (ID: 196901285071552513) | Executed command `scoreboard`
 [2024-10-18T03:10:36.152Z] User: vngchrome (ID: 196901285071552513) | Executed command `help`
 [2024-10-18T03:11:34.521Z] User: vngchrome (ID: 196901285071552513) | Executed command `help`
+[2024-10-18T03:20:10.005Z] User: vngchrome (ID: 196901285071552513) | Executed command `help`
+[2024-10-18T03:20:34.876Z] User: vngchrome (ID: 196901285071552513) | Executed command `scoreboard`
+[2024-10-18T03:20:49.635Z] User: vngchrome (ID: 196901285071552513) | Executed command `bribe`
+[2024-10-18T04:43:59.827Z] User: lazyjesus (ID: 756701883749498981) | Executed command `begingame`
+[2024-10-18T04:44:21.414Z] User: lazyjesus (ID: 756701883749498981) | Executed command `begingame`
+[2024-10-18T04:44:46.028Z] User: lazyjesus (ID: 756701883749498981) | Executed command `help`
+[2024-10-18T04:45:03.103Z] User: vngchrome (ID: 196901285071552513) | Executed command `help`
+[2024-10-18T04:49:10.820Z] User: lazyjesus (ID: 756701883749498981) | Executed command `rolldice`
+[2024-10-18T04:49:27.268Z] User: lazyjesus (ID: 756701883749498981) | Command: create_team | Changes: Added team Fat Jiggly Ass Dude
+[2024-10-18T04:49:27.379Z] User: lazyjesus (ID: 756701883749498981) | Executed command `create_team`
+[2024-10-18T04:49:32.348Z] User: lazyjesus (ID: 756701883749498981) | Executed command `rolldice`
+[2024-10-18T04:51:15.029Z] User: lazyjesus (ID: 756701883749498981) | Command: leaveteam | Left team: Fat Jiggly Ass Dude
+[2024-10-18T04:51:15.142Z] User: lazyjesus (ID: 756701883749498981) | Executed command `leaveteam`
+[2024-10-18T04:53:59.922Z] User: vngchrome (ID: 196901285071552513) | Executed command `jointeam`
+[2024-10-18T04:54:10.252Z] User: vngchrome (ID: 196901285071552513) | Command: create_team | Changes: Added team Blue
+[2024-10-18T04:54:10.404Z] User: vngchrome (ID: 196901285071552513) | Executed command `create_team`
+[2024-10-18T04:54:27.722Z] User: vngchrome (ID: 196901285071552513) | Executed command `endtile`
+[2024-10-18T04:54:48.776Z] User: lazyjesus (ID: 756701883749498981) | Executed command `verify`
+[2024-10-18T04:55:37.189Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 1, Rolled: 1, Landed on: 2, Space Description: Move Forward 2, Additional Move: 2, Final Position: 4
+[2024-10-18T04:55:37.406Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T15:07:44.145Z] User: vngchrome (ID: 196901285071552513) | Executed command `help`
+[2024-10-18T16:22:32.985Z] User: vngchrome (ID: 196901285071552513) | Executed command `endtile`

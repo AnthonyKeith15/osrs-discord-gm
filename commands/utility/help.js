@@ -32,6 +32,8 @@ module.exports = {
 - Check the standings anytime with **/scoreboard**.
 - Submit your post-verification screenshots with **/endtile** when you finish a task.
 - Use **/bribe** to manipulate your position on the board by moving back, but it comes at a cost.
+- For Fire Cape, Just submit the stack of fire capes you have in your inventory.
+- For DK Rings, just submit a picture of both rings in your inventory.
         `;
 
     // Reply with the help message

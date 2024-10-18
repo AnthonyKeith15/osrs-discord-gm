@@ -15,8 +15,8 @@ module.exports = {
     const logsFilePath = path.join(__dirname, "../../logs.txt");
 
     try {
-      // Defer the reply to give us time to process the command
-      await interaction.deferReply({ ephemeral: true });
+      // Remove the ephemeral option to make the reply public
+      await interaction.deferReply();
       console.log("Deferred reply for rollDice");
 
       // Read teams.json and gameBoard.json
@@ -141,7 +141,7 @@ module.exports = {
         responseMessage += `\n${actionMessage}`;
       }
 
-      // Reply with the detailed result
+      // Remove ephemeral: true to make the result public
       await interaction.editReply({ content: responseMessage });
     } catch (error) {
       console.error("Error during rollDice command execution:", error);
