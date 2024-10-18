@@ -1,8 +1,8 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
 // Path to the teams.json file
-const filePath = path.join(__dirname, 'teams.json');
+const filePath = path.join(__dirname, "../teams.json");
 
 // Function to display the scoreboard
 function displayScoreboard(teams) {
@@ -11,26 +11,33 @@ function displayScoreboard(teams) {
   console.log("Team Standings:\n");
 
   // Sort teams by position
-  const sortedTeams = Object.entries(teams).sort(([, teamA], [, teamB]) => teamA.position - teamB.position);
+  const sortedTeams = Object.entries(teams).sort(
+    ([, teamA], [, teamB]) => teamA.position - teamB.position
+  );
 
   sortedTeams.forEach(([teamName, teamInfo]) => {
-    console.log(`Team: ${teamName} | Position: ${teamInfo.position}`);
+    const bribeOwed = teamInfo.bribeOwed
+      ? `${teamInfo.bribeOwed.toLocaleString()} GP`
+      : "0 GP";
+    console.log(
+      `Team: ${teamName} | Position: ${teamInfo.position} | Bribes Owed: ${bribeOwed}`
+    );
     console.log("Members:");
 
     // Display each member's Discord name
-    teamInfo.members.forEach(member => {
+    teamInfo.members.forEach((member) => {
       console.log(`  - ${member.discordName}`);
     });
 
-    console.log(''); // Add an empty line between teams for better readability
+    console.log(""); // Add an empty line between teams for better readability
   });
 }
 
 // Function to load the JSON file and update the scoreboard
 function loadAndDisplayScoreboard() {
-  fs.readFile(filePath, 'utf8', (err, data) => {
+  fs.readFile(filePath, "utf8", (err, data) => {
     if (err) {
-      console.error('Error reading file:', err);
+      console.error("Error reading file:", err);
       return;
     }
 
@@ -38,7 +45,7 @@ function loadAndDisplayScoreboard() {
       const teams = JSON.parse(data);
       displayScoreboard(teams);
     } catch (parseError) {
-      console.error('Error parsing JSON:', parseError);
+      console.error("Error parsing JSON:", parseError);
     }
   });
 }
@@ -48,8 +55,8 @@ loadAndDisplayScoreboard();
 
 // Watch the teams.json file for changes
 fs.watch(filePath, (eventType) => {
-  if (eventType === 'change') {
-    console.log('\nteams.json has been updated. Reloading scoreboard...');
+  if (eventType === "change") {
+    console.log("\nteams.json has been updated. Reloading scoreboard...");
     loadAndDisplayScoreboard(); // Reload the scoreboard on changes
   }
 });

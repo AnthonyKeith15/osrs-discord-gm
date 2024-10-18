@@ -1,4 +1,66 @@
 {
+  "bleu": {
+    "position": 21,
+    "members": [
+      {
+        "discordID": "196901285071552513",
+        "discordName": "vngchrome",
+        "verificationLinks": {
+          "5": {
+            "preVerificationLink": "",
+            "postVerificationLink": "https://cdn.discordapp.com/ephemeral-attachments/1296628939564777526/1296664564674592859/Screenshot_2024-07-31_213342.png?ex=67131c7b&is=6711cafb&hm=b0dfea2ef7c61b273f6b04e2583c646f3749c0ee72c2619a91f8252bbeff37bf&",
+            "isVerified": true
+          },
+          "6": {
+            "preVerificationLink": "",
+            "postVerificationLink": "https://cdn.discordapp.com/ephemeral-attachments/1296628939564777526/1296662178585378816/Screenshot_2024-09-15_085738.png?ex=67131a42&is=6711c8c2&hm=be4d0db192653f67e4dd44dda865e7348051ec09fa85014a84514a553f221b63&",
+            "isVerified": true
+          },
+          "7": {
+            "preVerificationLink": "",
+            "postVerificationLink": "https://cdn.discordapp.com/ephemeral-attachments/1296628939564777526/1296671059780567040/Screenshot_2024-07-28_093049.png?ex=67132287&is=6711d107&hm=f2469338b8082eaa1cd5b2405c77a38645144dde47e48ff8ffd49898c5266a8f&",
+            "isVerified": false
+          },
+          "8": {
+            "preVerificationLink": "",
+            "postVerificationLink": "https://cdn.discordapp.com/ephemeral-attachments/1296628939564777526/1296665293459947520/Screenshot_2024-07-28_093058.png?ex=67131d28&is=6711cba8&hm=11ae6980b4e204f240b0cfdcea6735b8bd6c10b2d2ef6d92d6f7435e96890e33&",
+            "isVerified": false
+          },
+          "9": {
+            "preVerificationLink": "",
+            "postVerificationLink": "https://cdn.discordapp.com/ephemeral-attachments/1296628939564777526/1296671460202385408/Screenshot_2024-07-28_093058.png?ex=671322e7&is=6711d167&hm=5ef8d19ba472feace7ec0a8d1653d5dcda1c69dcfa1c8769646b1833493c8a2f&",
+            "isVerified": false
+          },
+          "14": {
+            "preVerificationLink": "https://cdn.discordapp.com/path/to/pre-verification-image14.png",
+            "postVerificationLink": "https://cdn.discordapp.com/path/to/post-verification-image14.png",
+            "isVerified": true
+          },
+          "15": {
+            "preVerificationLink": "",
+            "postVerificationLink": "https://cdn.discordapp.com/ephemeral-attachments/1296628939564777526/1296671559301337129/Screenshot_2024-07-28_093049.png?ex=671322fe&is=6711d17e&hm=10f9445ed59a89af6020b773743de84f61648999d01cf4407e5772e143b5ea80&",
+            "isVerified": false
+          },
+          "22": {
+            "preVerificationLink": "https://cdn.discordapp.com/path/to/pre-verification-image22.png",
+            "postVerificationLink": "https://cdn.discordapp.com/path/to/post-verification-image22.png",
+            "isVerified": true
+          },
+          "54": {
+            "preVerificationLink": "",
+            "postVerificationLink": "https://cdn.discordapp.com/ephemeral-attachments/1296628939564777526/1296659222586720338/Screenshot_2024-09-07_170212.png?ex=67131781&is=6711c601&hm=22cd4212d1095f85816a7b2d53f78ea5d19f7dfeb10557c4788e28820e5dc70e&",
+            "isVerified": true
+          },
+          "60": {
+            "preVerificationLink": "",
+            "postVerificationLink": "https://cdn.discordapp.com/ephemeral-attachments/1296628939564777526/1296661989766201447/Screenshot_2024-10-17_210433.png?ex=67131a15&is=6711c895&hm=9d95b846fbc2a374634913d820e00a1becd019aee062ef9aa117755273314a98&",
+            "isVerified": true
+          }
+        }
+      }
+    ],
+    "bribeOwed": 30000000
+  },
   "TeamAlpha": {
     "position": 9,
     "members": [
@@ -14,7 +76,7 @@
           "7": {
             "preVerificationLink": "https://cdn.discordapp.com/path/to/pre-verification-image7.png",
             "postVerificationLink": "",
-            "isVerified": false
+            "isVerified": true
           }
         }
       },
@@ -30,60 +92,28 @@
           "7": {
             "preVerificationLink": "https://cdn.discordapp.com/path/to/pre-verification-image7.png",
             "postVerificationLink": "",
-            "isVerified": false
-          }
-        }
-      },
-      {
-        "discordID": "756701883749498981",
-        "discordName": "lazyjesus",
-        "verificationLinks": {
-          "1": {
-            "preVerificationLink": "https://cdn.discordapp.com/path/to/pre-verification-image1.png",
-            "postVerificationLink": "https://cdn.discordapp.com/path/to/post-verification-image1.png",
             "isVerified": true
-          },
-          "7": {
-            "preVerificationLink": "https://cdn.discordapp.com/path/to/pre-verification-image7.png",
-            "postVerificationLink": "",
-            "isVerified": false
           }
         }
       }
     ]
   },
   "TeamBravo": {
-    "position": 8,
+    "position": 12,
     "members": [
-      {
-        "discordID": "112233445566778899",
-        "discordName": "User3",
-        "verificationLinks": {
-          "4": {
-            "preVerificationLink": "https://cdn.discordapp.com/path/to/pre-verification-image4.png",
-            "postVerificationLink": "https://cdn.discordapp.com/path/to/post-verification-image4.png",
-            "isVerified": true
-          },
-          "6": {
-            "preVerificationLink": "https://cdn.discordapp.com/path/to/pre-verification-image6.png",
-            "postVerificationLink": "",
-            "isVerified": false
-          }
-        }
-      },
       {
         "discordID": "998877665544332211",
         "discordName": "User4",
         "verificationLinks": {
-          "4": {
-            "preVerificationLink": "https://cdn.discordapp.com/path/to/pre-verification-image4.png",
-            "postVerificationLink": "https://cdn.discordapp.com/path/to/post-verification-image4.png",
+          "2": {
+            "preVerificationLink": "https://cdn.discordapp.com/path/to/pre-verification-image2.png",
+            "postVerificationLink": "https://cdn.discordapp.com/path/to/post-verification-image2.png",
             "isVerified": true
           },
-          "6": {
-            "preVerificationLink": "https://cdn.discordapp.com/path/to/pre-verification-image6.png",
+          "5": {
+            "preVerificationLink": "https://cdn.discordapp.com/path/to/pre-verification-image5.png",
             "postVerificationLink": "",
-            "isVerified": false
+            "isVerified": true
           }
         }
       },
@@ -91,80 +121,38 @@
         "discordID": "445566778899001122",
         "discordName": "User5",
         "verificationLinks": {
-          "4": {
-            "preVerificationLink": "https://cdn.discordapp.com/path/to/pre-verification-image4.png",
-            "postVerificationLink": "https://cdn.discordapp.com/path/to/post-verification-image4.png",
+          "3": {
+            "preVerificationLink": "https://cdn.discordapp.com/path/to/pre-verification-image3.png",
+            "postVerificationLink": "https://cdn.discordapp.com/path/to/post-verification-image3.png",
             "isVerified": true
           },
           "6": {
             "preVerificationLink": "https://cdn.discordapp.com/path/to/pre-verification-image6.png",
             "postVerificationLink": "",
-            "isVerified": false
+            "isVerified": true
           }
         }
       }
     ]
   },
   "TeamCharlie": {
-    "position": 12,
+    "position": 20,
     "members": [
-      {
-        "discordID": "556677889900112233",
-        "discordName": "User6",
-        "verificationLinks": {
-          "3": {
-            "preVerificationLink": "https://cdn.discordapp.com/path/to/pre-verification-image3.png",
-            "postVerificationLink": "https://cdn.discordapp.com/path/to/post-verification-image3.png",
-            "isVerified": true
-          },
-          "9": {
-            "preVerificationLink": "https://cdn.discordapp.com/path/to/pre-verification-image9.png",
-            "postVerificationLink": "",
-            "isVerified": false
-          }
-        }
-      },
-      {
-        "discordID": "667788990011223344",
-        "discordName": "User7",
-        "verificationLinks": {
-          "3": {
-            "preVerificationLink": "https://cdn.discordapp.com/path/to/pre-verification-image3.png",
-            "postVerificationLink": "https://cdn.discordapp.com/path/to/post-verification-image3.png",
-            "isVerified": true
-          },
-          "9": {
-            "preVerificationLink": "https://cdn.discordapp.com/path/to/pre-verification-image9.png",
-            "postVerificationLink": "",
-            "isVerified": false
-          }
-        }
-      },
       {
         "discordID": "778899001122334455",
-        "discordName": "User8",
+        "discordName": "User7",
         "verificationLinks": {
-          "3": {
-            "preVerificationLink": "https://cdn.discordapp.com/path/to/pre-verification-image3.png",
-            "postVerificationLink": "https://cdn.discordapp.com/path/to/post-verification-image3.png",
+          "5": {
+            "preVerificationLink": "https://cdn.discordapp.com/path/to/pre-verification-image5.png",
+            "postVerificationLink": "https://cdn.discordapp.com/path/to/post-verification-image5.png",
             "isVerified": true
           },
-          "9": {
-            "preVerificationLink": "https://cdn.discordapp.com/path/to/pre-verification-image9.png",
+          "11": {
+            "preVerificationLink": "https://cdn.discordapp.com/path/to/pre-verification-image11.png",
             "postVerificationLink": "",
-            "isVerified": false
+            "isVerified": true
           }
         }
-      }
-    ]
-  },
-  "Blue": {
-    "position": 29,
-    "members": [
-      {
-        "discordID": "196901285071552513",
-        "discordName": "vngchrome",
-        "verificationLinks": {}
       }
     ]
   }

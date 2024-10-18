@@ -211,3 +211,131 @@
 [2024-09-24T18:11:13.733Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
 [2024-09-24T18:11:37.186Z] Team: Blue | Tile: 29 | Description: 1 Whip drop per team | Verification: per_team
 [2024-09-24T18:11:37.317Z] User: vngchrome (ID: 196901285071552513) | Executed command `starttile`
+[2024-10-18T01:33:04.024Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 29, Rolled: 3, Landed on: 32, Space Description: Abyssal Demons teleport you back 3 spaces, Additional Move: -3, Final Position: 29, Final Space Description: 1 Whip drop per team
+[2024-10-18T01:33:04.169Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T01:33:09.636Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 29, Rolled: 6, Landed on: 35, Space Description: 50 Beginner clues per member, Additional Move: 0, Final Position: 35, Final Space Description: 50 Beginner clues per member
+[2024-10-18T01:33:09.754Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T01:33:16.478Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 35, Rolled: 5, Landed on: 40, Space Description: 1 unique from TzHaar monsters per member, Additional Move: 0, Final Position: 40, Final Space Description: 1 unique from TzHaar monsters per member
+[2024-10-18T01:33:16.608Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T01:33:38.324Z] User: vngchrome (ID: 196901285071552513) | Executed command `begingame`
+[2024-10-18T01:37:46.111Z] User: vngchrome (ID: 196901285071552513) | Executed command `begingame`
+[2024-10-18T01:38:14.169Z] User: vngchrome (ID: 196901285071552513) | Command: create_team | Changes: Added team bleu
+[2024-10-18T01:38:14.343Z] User: vngchrome (ID: 196901285071552513) | Executed command `create_team`
+[2024-10-18T01:49:54.509Z] User: vngchrome (ID: 196901285071552513) | Executed command `scoreboard`
+[2024-10-18T01:51:00.888Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 1, Rolled: 3, Landed on: 4, Space Description: 10 Corrupted Gauntlet completions as a team, Additional Move: 0, Final Position: 4, Final Space Description: 10 Corrupted Gauntlet completions as a team
+[2024-10-18T01:51:01.053Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T01:51:05.357Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 4, Rolled: 3, Landed on: 7, Space Description: 25 Medium clues per member, Additional Move: 0, Final Position: 7, Final Space Description: 25 Medium clues per member
+[2024-10-18T01:51:05.511Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T01:57:59.500Z] User: vngchrome (ID: 196901285071552513) | Executed command `teaminfo`
+[2024-10-18T01:58:20.266Z] User: vngchrome (ID: 196901285071552513) | Executed command `verify`
+[2024-10-18T01:58:33.796Z] User: vngchrome (ID: 196901285071552513) | Executed command `endtile`
+[2024-10-18T02:08:38.823Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 7, Rolled: 2, Landed on: 9, Space Description: DK Ring x2, Additional Move: 0, Final Position: 9, Final Space Description: DK Ring x2
+[2024-10-18T02:08:38.952Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:08:42.004Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 9, Rolled: 2, Landed on: 11, Space Description: Move Forward 3, Additional Move: 3, Final Position: 14, Final Space Description: Barrows Armor
+[2024-10-18T02:08:42.166Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:08:51.369Z] User: vngchrome (ID: 196901285071552513) | Executed command `scoreboard`
+[2024-10-18T02:09:59.608Z] User: vngchrome (ID: 196901285071552513) | Executed command `endtile`
+[2024-10-18T02:10:06.312Z] User: vngchrome (ID: 196901285071552513) | Executed command `verify`
+[2024-10-18T02:12:34.642Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 14, Rolled: 6, Landed on: 20, Space Description: Zulrah Unique, Additional Move: 0, Final Position: 20
+[2024-10-18T02:12:34.837Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:12:39.798Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 20, Rolled: 3, Landed on: 23, Space Description: Sara Unique, Additional Move: 0, Final Position: 23
+[2024-10-18T02:12:39.963Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:12:42.754Z] User: vngchrome (ID: 196901285071552513) | Executed command `bribe`
+[2024-10-18T02:12:46.930Z] User: vngchrome (ID: 196901285071552513) | Executed command `bribe`
+[2024-10-18T02:12:58.312Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 19, Rolled: 1, Landed on: 20, Space Description: Zulrah Unique, Additional Move: 0, Final Position: 20
+[2024-10-18T02:12:58.413Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:13:00.704Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 20, Rolled: 3, Landed on: 23, Space Description: Sara Unique, Additional Move: 0, Final Position: 23
+[2024-10-18T02:13:00.879Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:13:02.883Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 23, Rolled: 3, Landed on: 26, Space Description: Wintertodt Unique, Additional Move: 0, Final Position: 26
+[2024-10-18T02:13:03.035Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:13:05.575Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 26, Rolled: 4, Landed on: 30, Space Description: KBD Head, Additional Move: 0, Final Position: 30
+[2024-10-18T02:13:05.732Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:13:08.028Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 30, Rolled: 4, Landed on: 34, Space Description: Dragon Axe, Additional Move: 0, Final Position: 34
+[2024-10-18T02:13:08.184Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:13:10.368Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 34, Rolled: 6, Landed on: 40, Space Description: Barrows Armor, Additional Move: 0, Final Position: 40
+[2024-10-18T02:13:10.678Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:13:12.751Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 40, Rolled: 5, Landed on: 45, Space Description: Move Forward 3, Additional Move: 3, Final Position: 48
+[2024-10-18T02:13:12.903Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:14:24.899Z] User: vngchrome (ID: 196901285071552513) | Executed command `scoreboard`
+[2024-10-18T02:16:44.222Z] User: vngchrome (ID: 196901285071552513) | Executed command `scoreboard`
+[2024-10-18T02:20:14.663Z] User: vngchrome (ID: 196901285071552513) | Executed command `verify`
+[2024-10-18T02:20:25.893Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 48, Rolled: 1, Landed on: 49, Space Description: Roll Again, Additional Move: 0, Final Position: 49
+[2024-10-18T02:20:26.121Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:20:30.414Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 49, Rolled: 5, Landed on: 54, Space Description: Hard Clue Unique, Additional Move: 0, Final Position: 54
+[2024-10-18T02:20:30.610Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:20:50.896Z] User: vngchrome (ID: 196901285071552513) | Executed command `endtile`
+[2024-10-18T02:21:35.221Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 54, Rolled: 5, Landed on: 59, Space Description: Slayer Log Drop, Additional Move: 0, Final Position: 59
+[2024-10-18T02:21:35.362Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:21:38.368Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 59, Rolled: 2, Landed on: 61, Space Description: Raids Purple (Finish). Complete this task to win the game!, Additional Move: 0, Final Position: 61
+[2024-10-18T02:21:38.490Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:21:41.995Z] User: vngchrome (ID: 196901285071552513) | Executed command `bribe`
+[2024-10-18T02:21:44.373Z] User: vngchrome (ID: 196901285071552513) | Executed command `bribe`
+[2024-10-18T02:21:47.611Z] User: vngchrome (ID: 196901285071552513) | Executed command `moveteam`
+[2024-10-18T02:21:59.230Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 19, Rolled: 2, Landed on: 21, Space Description: Bandos Unique, Additional Move: 0, Final Position: 21
+[2024-10-18T02:21:59.379Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:22:01.611Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 21, Rolled: 6, Landed on: 27, Space Description: Zammy Unique, Additional Move: 0, Final Position: 27
+[2024-10-18T02:22:01.800Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:22:07.202Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 27, Rolled: 5, Landed on: 32, Space Description: Roll Again, Additional Move: 0, Final Position: 32
+[2024-10-18T02:22:07.339Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:22:09.547Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 32, Rolled: 1, Landed on: 33, Space Description: Gauntlet (Any) Unique, Additional Move: 0, Final Position: 33
+[2024-10-18T02:22:09.659Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:22:11.675Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 33, Rolled: 6, Landed on: 39, Space Description: Barrows Weapon, Additional Move: 0, Final Position: 39
+[2024-10-18T02:22:11.817Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:22:14.081Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 39, Rolled: 5, Landed on: 44, Space Description: Gauntlet (Any) Unique, Additional Move: 0, Final Position: 44
+[2024-10-18T02:22:14.224Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:22:16.914Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 44, Rolled: 4, Landed on: 48, Space Description: Vorkath Unique, Additional Move: 0, Final Position: 48
+[2024-10-18T02:22:17.132Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:22:19.663Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 48, Rolled: 2, Landed on: 50, Space Description: Move Back 3, Additional Move: -3, Final Position: 47
+[2024-10-18T02:22:19.871Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:22:41.273Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 47, Rolled: 5, Landed on: 52, Space Description: Muspah Icon/Shard, Additional Move: 0, Final Position: 52
+[2024-10-18T02:22:41.422Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:24:36.903Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 52, Rolled: 2, Landed on: 54, Space Description: Hard Clue Unique, Additional Move: 0, Final Position: 54
+[2024-10-18T02:24:37.075Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:24:39.785Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 54, Rolled: 1, Landed on: 55, Space Description: Bandos Unique, Additional Move: 0, Final Position: 55
+[2024-10-18T02:24:40.028Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:27:32.997Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 55, Rolled: 3, Landed on: 58, Space Description: Zammy Unique, Additional Move: 0, Final Position: 58
+[2024-10-18T02:27:33.132Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:29:36.995Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 58, Rolled: 2, Landed on: 60, Space Description: Dragon Pickaxe, Additional Move: 0, Final Position: 60
+[2024-10-18T02:29:37.116Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:31:25.483Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:31:35.792Z] User: vngchrome (ID: 196901285071552513) | Executed command `verify`
+[2024-10-18T02:31:50.368Z] User: vngchrome (ID: 196901285071552513) | Executed command `endtile`
+[2024-10-18T02:31:56.071Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 60, Rolled: 2, Landed on: 61, Space Description: Raids Purple (Finish). Complete this task to win the game!, Additional Move: 0, Final Position: 61
+[2024-10-18T02:31:56.225Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:32:02.705Z] User: vngchrome (ID: 196901285071552513) | Executed command `moveteam`
+[2024-10-18T02:32:11.844Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:32:35.334Z] User: vngchrome (ID: 196901285071552513) | Executed command `endtile`
+[2024-10-18T02:32:44.542Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 6, Rolled: 4, Landed on: 10, Space Description: Spirit Seed, Additional Move: 0, Final Position: 10
+[2024-10-18T02:32:44.703Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:32:50.724Z] User: vngchrome (ID: 196901285071552513) | Executed command `scoreboard`
+[2024-10-18T02:37:12.239Z] User: vngchrome (ID: 196901285071552513) | Executed command `bribe`
+[2024-10-18T02:38:56.836Z] User: vngchrome (ID: 196901285071552513) | Executed command `scoreboard`
+[2024-10-18T02:41:36.834Z] User: vngchrome (ID: 196901285071552513) | Executed command `bribe`
+[2024-10-18T02:41:48.353Z] User: vngchrome (ID: 196901285071552513) | Executed command `verify`
+[2024-10-18T02:42:04.688Z] User: vngchrome (ID: 196901285071552513) | Executed command `endtile`
+[2024-10-18T02:42:11.088Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 5, Rolled: 3, Landed on: 8, Space Description: KQ Unique, Additional Move: 0, Final Position: 8
+[2024-10-18T02:42:12.504Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:42:26.916Z] User: vngchrome (ID: 196901285071552513) | Executed command `verify`
+[2024-10-18T02:44:25.195Z] User: vngchrome (ID: 196901285071552513) | Executed command `endtile`
+[2024-10-18T02:44:57.890Z] User: vngchrome (ID: 196901285071552513) | Executed command `endtile`
+[2024-10-18T02:45:10.725Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 8, Rolled: 2, Landed on: 10, Space Description: Spirit Seed, Additional Move: 0, Final Position: 10
+[2024-10-18T02:45:10.890Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T02:45:14.995Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T03:00:17.208Z] User: vngchrome (ID: 196901285071552513) | Executed command `help`
+[2024-10-18T03:04:58.015Z] User: vngchrome (ID: 196901285071552513) | Executed command `bribe`
+[2024-10-18T03:05:31.935Z] User: vngchrome (ID: 196901285071552513) | Executed command `bribe`
+[2024-10-18T03:06:20.552Z] User: vngchrome (ID: 196901285071552513) | Executed command `endtile`
+[2024-10-18T03:07:52.741Z] User: vngchrome (ID: 196901285071552513) | Executed command `endtile`
+[2024-10-18T03:08:21.239Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 7, Rolled: 2, Landed on: 9, Space Description: DK Ring (Just 1, Ignore the picture), Additional Move: 0, Final Position: 9
+[2024-10-18T03:08:21.354Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T03:08:36.214Z] User: vngchrome (ID: 196901285071552513) | Executed command `endtile`
+[2024-10-18T03:09:28.137Z] User: vngchrome (ID: 196901285071552513) | Executed command `endtile`
+[2024-10-18T03:09:39.943Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 9, Rolled: 6, Landed on: 15, Space Description: Barrows Helmet, Additional Move: 0, Final Position: 15
+[2024-10-18T03:09:40.111Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T03:09:51.801Z] User: vngchrome (ID: 196901285071552513) | Executed command `endtile`
+[2024-10-18T03:09:56.301Z] User: vngchrome (ID: 196901285071552513) | Command: rolldice | Started on: 15, Rolled: 6, Landed on: 21, Space Description: Bandos Unique, Additional Move: 0, Final Position: 21
+[2024-10-18T03:09:56.456Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T03:09:59.746Z] User: vngchrome (ID: 196901285071552513) | Executed command `rolldice`
+[2024-10-18T03:10:31.043Z] User: vngchrome (ID: 196901285071552513) | Executed command `scoreboard`
+[2024-10-18T03:10:36.152Z] User: vngchrome (ID: 196901285071552513) | Executed command `help`
+[2024-10-18T03:11:34.521Z] User: vngchrome (ID: 196901285071552513) | Executed command `help`
