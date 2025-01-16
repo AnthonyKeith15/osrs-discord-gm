@@ -1,4 +1,4 @@
-const { SlashCommandBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, ComponentType } = require('discord.js');
+const { SlashCommandBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, ComponentType, EmbedBuilder } = require('discord.js');
 const fs = require('fs').promises;
 const path = require('path');
 
@@ -10,16 +10,12 @@ module.exports = {
     async execute(interaction) {
         console.log('Executing verify command');
 
-        // Define the paths to the teams.json and gameBoard.json files
         const teamsFilePath = path.join(__dirname, '../../teams.json');
         const gameBoardFilePath = path.join(__dirname, '../../gameBoard.json');
 
         try {
-            // Defer the reply to give us time to process the command
             await interaction.deferReply({ ephemeral: true });
-            console.log('Deferred reply for verify');
 
-            // Read teams.json and gameBoard.json
             const [teamsDataRaw, gameBoardDataRaw] = await Promise.all([
                 fs.readFile(teamsFilePath, 'utf-8'),
                 fs.readFile(gameBoardFilePath, 'utf-8')
@@ -30,7 +26,7 @@ module.exports = {
 
             let unverifiedTiles = [];
 
-            // Loop through all teams and gather unverified submissions
+            // Loop through teams and collect unverified tile submissions
             for (const [teamName, teamInfo] of Object.entries(teamsData)) {
                 const unverifiedTeamTiles = {};
 
@@ -48,8 +44,8 @@ module.exports = {
 
                             unverifiedTeamTiles[tile].members.push({
                                 discordName: member.discordName,
-                                preVerificationLink: links.preVerificationLink,
-                                postVerificationLink: links.postVerificationLink
+                                preVerificationLinks: links.preVerificationLinks || [],
+                                postVerificationLinks: links.postVerificationLinks || []
                             });
                         }
                     }
@@ -66,18 +62,41 @@ module.exports = {
             // Sort unverified tiles by tile number
             unverifiedTiles.sort((a, b) => a.tile - b.tile);
 
-            // Display unverified tiles one by one
+            // Display unverified tiles with image embeds
             for (const tile of unverifiedTiles) {
                 let content = `**Team:** ${tile.team}\n`;
                 content += `**Tile:** ${tile.tile} - *${tile.description}*\n\n`;
 
+                let embeds = [];
+                let imageCount = 1;
+
                 for (const member of tile.members) {
                     content += `**Member:** ${member.discordName}\n`;
-                    content += `**Pre Verification Link:** ${member.preVerificationLink || 'Not provided'}\n`;
-                    content += `**Post Verification Link:** ${member.postVerificationLink || 'Not provided'}\n\n`;
+
+                    // Process pre-verification images
+                    for (const link of member.preVerificationLinks) {
+                        const embed = new EmbedBuilder()
+                            .setTitle(`Pre-Verification Image ${imageCount}`)
+                            .setURL(link)
+                            .setImage(link)
+                            .setColor(0x00AE86);
+                        embeds.push(embed);
+                        imageCount++;
+                    }
+
+                    // Process post-verification images
+                    for (const link of member.postVerificationLinks) {
+                        const embed = new EmbedBuilder()
+                            .setTitle(`Post-Verification Image ${imageCount}`)
+                            .setURL(link)
+                            .setImage(link)
+                            .setColor(0xFF5733);
+                        embeds.push(embed);
+                        imageCount++;
+                    }
                 }
 
-                // Add the approve/reject buttons for the whole tile (affects all members)
+                // Approve/Reject buttons for the tile
                 const row = new ActionRowBuilder()
                     .addComponents(
                         new ButtonBuilder()
@@ -90,11 +109,11 @@ module.exports = {
                             .setStyle(ButtonStyle.Danger)
                     );
 
-                // Send the message with buttons for each tile
-                await interaction.followUp({ content, components: [row], ephemeral: true });
+                // Send verification message with images
+                await interaction.followUp({ content, embeds, components: [row], ephemeral: true });
             }
 
-            // Handle button interactions (approvals and rejections)
+            // Handle button interactions for approvals/rejections
             const collector = interaction.channel.createMessageComponentCollector({ componentType: ComponentType.Button, time: 60000 });
 
             collector.on('collect', async i => {
@@ -102,17 +121,16 @@ module.exports = {
                 const team = teamsData[teamName];
 
                 if (team) {
-                    // Loop through all team members to verify the tile
                     for (const member of team.members) {
                         if (member.verificationLinks[tile]) {
                             member.verificationLinks[tile].isVerified = (action === 'approve');
                         }
                     }
 
-                    // Save the updated teams data back to the JSON file
+                    // Save updated data
                     await fs.writeFile(teamsFilePath, JSON.stringify(teamsData, null, 2));
 
-                    // Update the interaction message
+                    // Update interaction response
                     await i.update({ content: `Tile ${tile} for team ${teamName} has been ${action === 'approve' ? 'approved' : 'rejected'}.`, components: [] });
                 }
             });

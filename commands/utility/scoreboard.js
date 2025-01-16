@@ -58,7 +58,7 @@ module.exports = {
         const bribeOwed = teamInfo.bribeOwed
           ? `${teamInfo.bribeOwed.toLocaleString()} GP`
           : "0 GP";
-        scoreboard += `**${teamName}** - Position: ${position} - Description: ${description} - Bribes Owed: ${bribeOwed}\n`;
+        scoreboard += `**${teamName}** - Position: ${position} - Description: ${description}\n`;
       }
 
       // Send the scoreboard message

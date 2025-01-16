@@ -2,436 +2,442 @@
   "game": {
     "name": "OSRS Themed Board Game",
     "board": {
-      "size": 61,
+      "size": 62,
       "spaces": [
         {
           "position": 1,
-          "description": "Dragon Pickaxe",
+          "description": "Complete 1 Barrows set of the same set per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 2,
-          "description": "Move Forward 2",
-          "action": {
-            "type": "move",
-            "spaces": 2
+          "description": "Obtain the Ring of the Gods from Vetion per team",
+          "verification": {
+            "type": "per_team"
           }
         },
         {
           "position": 3,
-          "description": "Long Bone",
+          "description": "Obtain the Hueycoatl Hide drop from Hueycoatl per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 4,
-          "description": "GOTR Unique",
+          "description": "Obtain any crystal seed from the Gauntlet per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 5,
-          "description": "Temp Unique",
+          "description": "Obtain any axe piece from the Desert Treasure II bosses per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 6,
-          "description": "Slayer Superior Spawn",
+          "description": "1 Fight Caves completion per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 7,
-          "description": "Wintertodt Unique",
+          "description": "Obtain any unique other than sunfire splinters from the Fortis Colsseum per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 8,
-          "description": "KQ Unique",
+          "description": "Obtain any dye from Guardians of the Rift per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 9,
-          "description": "DK Rings x2",
+          "description": "Obtain the Augery or Dexterous Prayer Scroll from the Chambers of Xeric per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 10,
-          "description": "Spirit Seed",
+          "description": "Almighty Olm summons you, go back 1 space",
+          "action": {
+            "type": "move",
+            "spaces": -1
+          }
+        },
+        {
+          "position": 11,
+          "description": "1 Zulrah unique per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
-          "position": 11,
-          "description": "Move Forward 3",
-          "action": {
-            "type": "move",
-            "spaces": 3
-          }
-        },
-        {
           "position": 12,
-          "description": "Cudgel",
+          "description": "1 Dragon pickaxe from any Wilderness boss per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 13,
-          "description": "Barrows Weapon",
+          "description": "1 God Wars Dungeon unique from any boss per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 14,
-          "description": "Barrows Armor",
-          "verification": {
-            "type": "per_team"
+          "description": "Guthix Blesses You, roll again",
+          "action": {
+            "type": "rollAgain"
           }
         },
         {
           "position": 15,
-          "description": "Barrows Helmet",
+          "description": "2 Rings from Dagannoth Kings per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 16,
-          "description": "Vorkath Unique",
+          "description": "1 Tombs of Amascut purple per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 17,
-          "description": "Move Back 2",
-          "action": {
-            "type": "move",
-            "spaces": -2
+          "description": "1 Kalphite Queen head per team",
+          "verification": {
+            "type": "per_team"
           }
         },
         {
           "position": 18,
-          "description": "Zenyte",
+          "description": "1 Wintertodt unique per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 19,
-          "description": "Barb Assault High Gamble",
+          "description": "1 shard piece from Chaos Fanatic per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 20,
-          "description": "Zulrah Unique",
+          "description": "1 unique drop from The Nightmare per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 21,
-          "description": "Bandos Unique",
+          "description": "Obtain 1 Unique drop from Zalcano per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 22,
-          "description": "GOTR Unique",
+          "description": "Obtain any Vestige drop from the Desert Treasure II bosses per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 23,
-          "description": "Arma Unique",
+          "description": "1 King Black Dragon head per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 24,
-          "description": "Temp Unique",
+          "description": "1 Armadyl crossbow or Saradomin hilt per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 25,
-          "description": "Sara Unique",
+          "description": "1 Corporeal Beast unique per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 26,
-          "description": "Wintertodt Unique",
+          "description": "Obtain 1 Tormented Synapse or Burning claw from Tormented Deamons per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 27,
-          "description": "Zammy Unique",
+          "description": "Complete 1 Full set of the same set of Moons of Perils armor",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 28,
-          "description": "Fanatic Unique",
+          "description": "1 Nex armor piece per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 29,
-          "description": "Scorpia Unique",
+          "description": "1 Whip drop per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 30,
-          "description": "KBD Head",
+          "description": "Obtain 1 of any of the boot drops from medium clues per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 31,
-          "description": "DK Rings x2",
+          "description": "1 Sarachnis unique per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 32,
-          "description": "Roll Again",
+          "description": "Abyssal Demons teleport you back 3 spaces",
           "action": {
-            "type": "roll_again"
+            "type": "move",
+            "spaces": -3
           }
         },
         {
           "position": 33,
-          "description": "Gauntlet (Any) Unique",
+          "description": "1 Voidwaker piece from a Wilderness boss per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 34,
-          "description": "Dragon Axe",
+          "description": "1 shard from Crazy Archaeologist per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 35,
-          "description": "Muspah Icon/Shard",
+          "description": "Obtain 1 Zombie Axe and Zombie Helmet per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 36,
-          "description": "Slayer Log Drop",
+          "description": "1 Twisted Kit from the Chambers of Xeric per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 37,
-          "description": "Spirit Seed",
-          "verification": {
-            "type": "per_team"
+          "description": "What if this one is a T-Bow? Go back 1 space",
+          "action": {
+            "type": "move",
+            "spaces": -1
           }
         },
         {
           "position": 38,
-          "description": "Zenyte",
+          "description": "1 unique from Vorkath per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 39,
-          "description": "Barrows Weapon",
+          "description": "1 unique from Chaos Druids per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 40,
-          "description": "Barrows Armor",
+          "description": "Obtain 1 unique from TzHaar monsters per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 41,
-          "description": "Barrows Helmet",
+          "description": "Obtain 1 Champion scroll per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 42,
-          "description": "Roll Again",
-          "action": {
-            "type": "roll_again"
-          }
-        },
-        {
-          "position": 43,
-          "description": "Barb Assault High Gamble",
+          "description": "1 Venator shard from Muspah per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
+          "position": 43,
+          "description": "*Halo 3 Announcer* Slayer! Go forward 2 spaces",
+          "action": {
+            "type": "move",
+            "spaces": 2
+          }
+        },
+        {
           "position": 44,
-          "description": "Gauntlet (Any) Unique",
+          "description": "Obtain any Virtus piece from any of the Desert Treasure II bosses",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 45,
-          "description": "Move Forward 3",
-          "action": {
-            "type": "move",
-            "spaces": 3
+          "description": "1 Slayer boss unique per team",
+          "verification": {
+            "type": "per_team"
           }
         },
         {
           "position": 46,
-          "description": "3x Fire Cape",
+          "description": "1 Kree'arra armor piece per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 47,
-          "description": "Zulrah Unique",
+          "description": "Any ancient totem per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 48,
-          "description": "Slayer Superior Spawn",
+          "description": "1 Blood shard drop per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 49,
-          "description": "Vorkath Unique",
+          "description": "1 Dagon'hai piece per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 50,
-          "description": "3x Fire Cape",
+          "description": "1 Elven signet from crystal impling per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 51,
-          "description": "Move Back 3",
-          "action": {
-            "type": "move",
-            "spaces": 3
+          "description": "Obtain 1 Glacial temotli per team",
+          "verification": {
+            "type": "per_team"
           }
         },
         {
           "position": 52,
-          "description": "Muspah Icon/Shard",
+          "description": "1 Theater of Blood purple as a team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 53,
-          "description": "Long Bone",
+          "description": "Obtain 1 pair of dragon limbs from Rune or Adamant dragons per team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 54,
-          "description": "Hard Clue Unique",
+          "description": "1 Enhanced teleport seed as a team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 55,
-          "description": "Bandos Unique",
+          "description": "1 Bandos armor piece as a team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 56,
-          "description": "Arma Unique",
+          "description": "1 Dark bow from Dark Beast as a team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 57,
-          "description": "Sara Unique",
+          "description": "1 Zamorak hilt as a team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 58,
-          "description": "Zammy Unique",
+          "description": "1 Scorpia unique as a team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 59,
-          "description": "Slayer Log Drop",
-          "verification": {
-            "type": "per_team"
+          "description": "Successfully Escape JD's Playpen, roll again",
+          "action": {
+            "type": "rollAgain"
           }
         },
         {
           "position": 60,
-          "description": "Dragon Pickaxe",
+          "description": "1 Zenyte shard drop as a team",
           "verification": {
             "type": "per_team"
           }
         },
         {
           "position": 61,
-          "description": "Raids Purple (Finish)",
+          "description": "1 Chaos Elemental unique as a team",
+          "verification": {
+            "type": "per_team"
+          }
+        },
+        {
+          "position": 62,
+          "description": "1 Crystal grail as a team",
           "verification": {
             "type": "per_team"
           }

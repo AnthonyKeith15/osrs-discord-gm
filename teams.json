@@ -1,1 +1,28 @@
-{}
+{
+  "blue": {
+    "position": 9,
+    "members": [
+      {
+        "discordID": "196901285071552513",
+        "discordName": "vngchrome",
+        "verificationLinks": {
+          "1": {
+            "postVerificationLinks": [
+              "https://cdn.discordapp.com/ephemeral-attachments/1287086134748516444/1329543520327041150/red_circle.png?ex=678ab964&is=678967e4&hm=49899e1de769fc843b9e5c491eb1218b95fa7cf9db33adebcb4ee76e2af13d32&",
+              "https://cdn.discordapp.com/ephemeral-attachments/1287086134748516444/1329543559338131526/rock3.png?ex=678ab96e&is=678967ee&hm=611160156095334d607944cb2494f11301be957b861264b6d6f531c8b245c458&",
+              "https://cdn.discordapp.com/ephemeral-attachments/1287086134748516444/1329543604695208047/Screenshot_2024-12-19_182027.png?ex=678ab979&is=678967f9&hm=82027005ea9da732ae280dd3b3756dd8dd78d5e4f60792e0e7c54d101e417021&",
+              "https://cdn.discordapp.com/ephemeral-attachments/1287086134748516444/1329543639881355384/Screenshot_2024-12-11_192540.png?ex=678ab981&is=67896801&hm=699f85e331afa119ce1bc14d97927dbe9fd5dd114e3b5089c546234d29d4286b&"
+            ],
+            "isVerified": true
+          },
+          "7": {
+            "postVerificationLinks": [
+              "https://cdn.discordapp.com/ephemeral-attachments/1287086134748516444/1329543994849628271/log.png?ex=678ab9d6&is=67896856&hm=9ac5e17def7be6d32ce19ae1f85d762300fafc8e12d2e75ba38a651a2673bbad&"
+            ],
+            "isVerified": false
+          }
+        }
+      }
+    ]
+  }
+}

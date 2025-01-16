@@ -14,12 +14,15 @@ module.exports = {
     const gameBoardFilePath = path.join(__dirname, "../../gameBoard.json");
     const logsFilePath = path.join(__dirname, "../../logs.txt");
 
+    // Hash map defining required images per tile (default: 1 image)
+    const requiredImagesPerTile = {
+      "1": 4, "15": 2, "27": 3, "35": 2
+    };
+
     try {
-      // Remove the ephemeral option to make the reply public
       await interaction.deferReply();
       console.log("Deferred reply for rollDice");
 
-      // Read teams.json and gameBoard.json
       const teamsDataRaw = await fs.readFile(teamsFilePath, "utf-8");
       const gameBoardDataRaw = await fs.readFile(gameBoardFilePath, "utf-8");
       const teamsData = JSON.parse(teamsDataRaw);
@@ -49,23 +52,25 @@ module.exports = {
 
       const currentPosition = userTeam.position.toString(); // Convert position to string
 
-      // Check if a verification link exists for the current tile
-      if (userMember.verificationLinks[currentPosition]) {
-        const verification = userMember.verificationLinks[currentPosition];
-        if (!verification.postVerificationLink) {
-          return interaction.editReply({
-            content:
-              "You must submit a post-verification link for the current tile before rolling the dice. Please submit your verification first.",
-          });
+      // Get the required number of images for the tile (default: 1 if not in hash map)
+      const requiredImages = requiredImagesPerTile[currentPosition] || 1;
+
+      // Count total images submitted across all team members for this tile
+      let totalImagesSubmitted = 0;
+      userTeam.members.forEach(member => {
+        if (member.verificationLinks[currentPosition]?.postVerificationLinks) {
+          totalImagesSubmitted += member.verificationLinks[currentPosition].postVerificationLinks.length;
         }
-      } else {
+      });
+
+      // Prevent rolling if the team hasn't met the required number of images
+      if (totalImagesSubmitted < requiredImages) {
         return interaction.editReply({
-          content:
-            "You have not started verification for the current tile. Please submit verification before rolling the dice.",
+          content: `🚫 Your team must submit **${requiredImages} images** for position **${currentPosition}** before rolling! (${totalImagesSubmitted}/${requiredImages} submitted)`,
         });
       }
 
-      // If no verification is required or verification is complete, proceed with the roll
+      // Proceed with the roll if verification is complete
       const startingPosition = userTeam.position;
       const roll = Math.floor(Math.random() * 6) + 1;
       let newPosition = userTeam.position + roll;
@@ -136,13 +141,13 @@ module.exports = {
       console.log("Roll logged to logs.txt");
 
       // Construct the detailed response message
-      let responseMessage = `You rolled a ${roll}. You landed on position ${newPosition}. ${initialSpaceDescription}`;
+      let responseMessage = `🎲 You rolled a **${roll}**. You landed on position **${newPosition}**. ${initialSpaceDescription}`;
       if (actionMessage) {
         responseMessage += `\n${actionMessage}`;
       }
 
-      // Remove ephemeral: true to make the result public
       await interaction.editReply({ content: responseMessage });
+
     } catch (error) {
       console.error("Error during rollDice command execution:", error);
       try {

@@ -5,46 +5,34 @@ const path = require("path");
 module.exports = {
   data: new SlashCommandBuilder()
     .setName("endtile")
-    .setDescription(
-      "Submit the ending verification screenshot for your current position"
-    )
-    .addAttachmentOption((option) =>
-      option
-        .setName("image")
-        .setDescription("The screenshot for the ending verification")
-        .setRequired(true)
-    ),
+    .setDescription("Submit an ending verification screenshot for your current position")
+    .addAttachmentOption(option => 
+      option.setName("image")
+        .setDescription("Upload a single screenshot")
+        .setRequired(true)),
 
   async execute(interaction) {
-    console.log("Executing endTile command");
+    console.log("Executing endtile command");
 
-    // Define the paths to the teams.json and gameBoard.json files
     const teamsFilePath = path.join(__dirname, "../../teams.json");
     const gameBoardFilePath = path.join(__dirname, "../../gameBoard.json");
 
+    // Hash map defining required images per tile (default: 1 image)
+    const requiredImagesPerTile = {
+      "1": 4, "15": 2, "27": 3, "35": 2
+    };
+
     try {
-      // Defer the reply to give us time to process the command
       await interaction.deferReply({ ephemeral: true });
-      console.log("Deferred reply for endTile");
 
-      // Read teams.json
-      const teamsDataRaw = await fs.readFile(teamsFilePath, "utf-8");
-      console.log("Successfully read teams.json");
-      const teamsData = JSON.parse(teamsDataRaw);
+      console.log("Interaction options:", interaction.options.data); // Debugging step
 
-      // Read gameBoard.json
-      const gameBoardDataRaw = await fs.readFile(gameBoardFilePath, "utf-8");
-      console.log("Successfully read gameBoard.json");
-      const gameBoardData = JSON.parse(gameBoardDataRaw);
+      const teamsData = JSON.parse(await fs.readFile(teamsFilePath, "utf-8"));
+      const gameBoardData = JSON.parse(await fs.readFile(gameBoardFilePath, "utf-8"));
 
-      // Find the user's team and their current position
-      let userTeam = null;
-      let userTeamName = "";
-      let userMember = null;
+      let userTeam = null, userTeamName = "", userMember = null;
       for (const [teamName, teamInfo] of Object.entries(teamsData)) {
-        const member = teamInfo.members.find(
-          (member) => member.discordID === interaction.user.id
-        );
+        const member = teamInfo.members.find(m => m.discordID === interaction.user.id);
         if (member) {
           userTeam = teamInfo;
           userTeamName = teamName;
@@ -54,124 +42,60 @@ module.exports = {
       }
 
       if (!userTeam || !userMember) {
-        // User is not in any team
-        await interaction.editReply({
-          content: "You are not in any team. Please join a team first.",
-        });
+        await interaction.editReply({ content: "You are not in a team. Please join a team first." });
         return;
       }
 
-      // Get the current position of the team
-      const currentPosition = userTeam.position.toString(); // Convert to string to use as a key
+      const currentPosition = userTeam.position.toString();
+      const currentSpace = gameBoardData.game.board.spaces.find(space => space.position === userTeam.position);
 
-      // Find the current space on the board
-      const currentSpace = gameBoardData.game.board.spaces.find(
-        (space) => space.position === userTeam.position
-      );
       if (!currentSpace) {
-        await interaction.editReply({
-          content: "Invalid position on the board. Please try again.",
-        });
+        await interaction.editReply({ content: "Invalid position on the board. Please try again." });
         return;
       }
 
-      // Get the attachment (image) from the interaction
+      const requiredImages = requiredImagesPerTile[currentPosition] || 1;
       const image = interaction.options.getAttachment("image");
+
       if (!image) {
-        await interaction.editReply({
-          content:
-            "No image attached. Please attach an image for verification.",
-        });
+        await interaction.editReply({ content: "No image attached. Please upload an image." });
         return;
       }
 
-      let allMembersVerified = false;
+      // Initialize verification storage if not present
+      if (!userMember.verificationLinks[currentPosition]) {
+        userMember.verificationLinks[currentPosition] = { postVerificationLinks: [], isVerified: false };
+      }
 
-      // Handle `per_team` tiles
-      if (currentSpace.verification?.type === "per_team") {
-        // No need for pre-verification, so directly add the post-verification link
-        userMember.verificationLinks[currentPosition] = {
-          preVerificationLink: "", // No pre-verification required for per_team
-          postVerificationLink: image.url,
-          isVerified: false, // Manually verify later
-        };
+      // Store the submitted image
+      userMember.verificationLinks[currentPosition].postVerificationLinks.push(image.url);
+      await fs.writeFile(teamsFilePath, JSON.stringify(teamsData, null, 2));
 
-        // Save the updated teams.json file
-        await fs.writeFile(teamsFilePath, JSON.stringify(teamsData, null, 2));
-        console.log(
-          "Successfully updated teams.json for per_team verification"
-        );
+      console.log(`Updated verification for tile ${currentPosition}`);
 
-        allMembersVerified = true; // Since it's a per_team task, it's considered done after this submission
-
-        // Notify the user that verification is completed
-        await interaction.editReply({
-          content: `Post-verification link submitted for your team at position ${currentPosition}: ${currentSpace.description}. Submission completed, awaiting manual verification.`,
-        });
-      } else if (currentSpace.verification?.type === "per_member") {
-        // Handle `per_member` tiles
-
-        // Initialize or update the verificationLinks for the current position
-        if (!userMember.verificationLinks[currentPosition]) {
-          await interaction.editReply({
-            content: `No pre-verification link found for position ${currentPosition}. Please submit the starting verification first.`,
-          });
-          return;
+      // Count total images submitted across the team for this tile
+      let totalImagesSubmitted = 0;
+      userTeam.members.forEach(member => {
+        if (member.verificationLinks[currentPosition]?.postVerificationLinks) {
+          totalImagesSubmitted += member.verificationLinks[currentPosition].postVerificationLinks.length;
         }
+      });
 
-        // Update the post-verification link
-        userMember.verificationLinks[currentPosition].postVerificationLink =
-          image.url;
-
-        // Save the updated teams.json file without setting `isVerified` to true
-        await fs.writeFile(teamsFilePath, JSON.stringify(teamsData, null, 2));
-        console.log(
-          "Successfully updated teams.json for per_member verification"
-        );
-
-        // Check if all team members have verified for this tile
-        const teamMembersStillToVerify = userTeam.members.filter((member) => {
-          const memberVerification = member.verificationLinks[currentPosition];
-          return !memberVerification?.postVerificationLink;
+      if (totalImagesSubmitted >= requiredImages) {
+        await interaction.followUp({
+          content: `🎉 **Team ${userTeamName}** has successfully completed tile ${currentPosition} with ${totalImagesSubmitted}/${requiredImages} images!`,
+          ephemeral: false,
         });
 
-        if (teamMembersStillToVerify.length > 0) {
-          const membersStillToSubmit = teamMembersStillToVerify
-            .map((member) => member.discordName)
-            .join(", ");
-          await interaction.editReply({
-            content: `Post-verification link submitted for position ${currentPosition}. Waiting for the following members to submit their verification: ${membersStillToSubmit}.`,
-          });
-        } else {
-          await interaction.editReply({
-            content: `Post-verification link submitted for position ${currentPosition}. All members have completed the post-verification for this tile. Manual verification is required.`,
-          });
-          allMembersVerified = true; // All members have completed the post-verification
-        }
+        userMember.verificationLinks[currentPosition].isVerified = true;
       } else {
         await interaction.editReply({
-          content:
-            "Verification type not recognized. Please check the configuration.",
-        });
-      }
-
-      // If all members are verified or it's a per_team task, announce it publicly
-      if (allMembersVerified) {
-        await interaction.followUp({
-          content: `🎉 **Team ${userTeamName}** has successfully completed tile ${currentPosition}!`,
-          ephemeral: false,
+          content: `✅ Your image has been submitted for position ${currentPosition}. Waiting for more images... (${totalImagesSubmitted}/${requiredImages} needed)`,
         });
       }
     } catch (error) {
-      console.error("Error during endTile command execution:", error);
-      try {
-        await interaction.editReply({
-          content:
-            "An error occurred while submitting verification. Please try again later.",
-        });
-      } catch (editError) {
-        console.error("Error editing reply in catch:", editError);
-      }
+      console.error("Error during endtile execution:", error);
+      await interaction.editReply({ content: "An error occurred. Please try again later." });
     }
   },
 };
